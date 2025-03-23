@@ -9,7 +9,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
+    z-index: 1;
 }
 
 .Menu .Menu__div {
@@ -18,11 +19,36 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 15px;
+    padding: 20px;
+    background-color: var(--color-0);
 }
 
 .Menu a {
     text-decoration: none;
     margin: 5px;
-    color: #000;
+    color: var(--color-6);
+    transition: color var(--transition-duration-1);
+}
+
+.Menu a:hover {
+    color: var(--color-4);
+}
+
+.Menu__Icons {
+    width: 20px;
+    height: 18px;
+    color: var(--color-5);
+    transition: color var(--transition-duration-2);
+}
+
+.Menu button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+}
+
+.Menu__Icons:hover{
+    cursor: pointer;
+    color: var(--color-2);
 }

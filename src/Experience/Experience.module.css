@@ -2,18 +2,52 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
 }
 
-.Experience__Title1 {
+.Experience__Container_Divs{
+    flex-direction: column;
+}
+
+.Experience__Container_Divs p{
+    color: var(--color-6);
+    border-left: 3px solid var(--color-6);
+    padding-left: 10px;
+}
+
+.Experience__Container_Developer {
+    width: 90%;
+}
+
+.Experience__Container_Employee {
+    width: 90%;
+}
+
+.Experience__Titles {
     text-align: center;
+    font-size: var(--font-size-h2);
+    color: var(--color-4);
 }
 
 .Experience__Container h4 {
-    margin-left: 15px;
+    font-size: var(--font-size-h4);
+    color: var(--color-6);
+}
+
+.Experience__Title1 {
+    display: block;
+    width: 100%;
     text-align: left;
+    font-size: var(--font-size-h1);
+    color: var(--color-4);
 }
 
 @media (max-height: 900px) {
-
+    .Experience__Container {
+        flex-direction: column;
+    }
 }
 

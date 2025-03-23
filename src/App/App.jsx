@@ -4,7 +4,7 @@ import { Experience } from "../Experience"
 import { Projects } from "../Projects"
 import { Technologies } from "../Technologies"
 import { Sections } from "../Sections"
-import { Menu } from "../Menu"
+import { Menu } from "../Menu" 
 
 function App() {
   return (

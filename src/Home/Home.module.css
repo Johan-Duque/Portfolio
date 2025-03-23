@@ -15,15 +15,75 @@
 .Container_Presentation__img img{
     width: 100%;
     border-radius: 50px;
-    border: 2px solid #000;
+    border: 3px solid var(--color-5);
 }
 
 .Container_Presentation__div{
+    position: relative;
     width: 600px;
+}
+
+.Container_Presentation__div h1{
+    color: var(--color-6);
+    font-size: var(--font-size-h1);
+}
+
+.Container_Presentation__div h1 b{
+    color: var(--color-4);
+}
+
+.Container_Presentation__div p{
+    line-height: 2rem;
+    color: var(--color-6);
+    font-size: var(--font-size-p);
+}
+
+.Container_Presentation__div p em{
+    color: var(--color-4);
+}
+
+.Container_Presentation_Decoration {
+    width: 150px;
+    background-color: var(--color-4);
+    height: 3px;
+}
+
+.Container_Presentation_Decoration:nth-child(1) {
+    position: absolute;
+    left: 0;
+    margin-top: 5px;
+}
+
+.Container_Presentation_Decoration:nth-child(4) {
+    position: absolute;
+    right: 0;
+    margin-bottom: 5px;
 }
 
 .Container_Presentation__div button{
     margin: 0px 5px 0px 0px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-4);
+    transition: background var(--transition-duration-1), color var(--transition-duration-1);
+}
+
+.Container_Presentation__div a{
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-0);
+    font-size: var(--font-size-p);
+    gap: 0 5px;
+}
+
+.Container_Presentation__div button:hover{
+    background-color: var(--color-6);
+    color: var(--color-0);
+    cursor: pointer;
 }
 
 @media (max-width: 1035px) {  
@@ -34,3 +94,27 @@
         margin-bottom: 80px;
     }
 }
+
+@media (max-width: 670px) {  
+    .Container_Presentation__img{
+        width: 250px;
+    }    
+}
+
+@media (max-width: 530px) {  
+    .Container_Presentation__div h1{
+        font-size: calc(var(--font-size-h1) - 5px);
+    }
+    .Container_Presentation__div p{
+        line-height: 1.5rem;
+        font-size: calc(var(--font-size-p) - 1px);
+    }
+    .Container_Presentation_Decoration {
+        display: none;
+    }
+    .Container_Presentation__div a{
+        font-size: var(--font-size-buttons)
+    }
+}
+
+

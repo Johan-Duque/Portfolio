@@ -1,8 +1,25 @@
 :root {
-    --color-0: #fff;
-    --color-1: #4493F8;
-    --color-2: #598BCD;
-    --color-3: #627EA2;
-    --color-4: #5C6878;
-    --color-5: #43474D;
-}
+    --color-0: #000;
+    --color-1: #000;
+    --color-2: #000;
+    --color-3: #000;
+    --color-4: #000;
+    --color-5: #000;
+    --color-6: #000;
+
+    --font-size-h1: 26px;
+    --font-size-h2: 24px;
+    --font-size-h3: 22px;
+    --font-size-h4: 20px;
+
+    --font-size-p: 16px;
+    --font-size-b: 12px;
+    --font-size-a: 12px;
+
+    --font-family-1: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --font-family-2: 'Times New Roman', Times, serif;
+    --font-family-3: Arial, Helvetica, sans-serif;
+
+    --transition-duration-1: .3s;
+    --transition-duration-2: .15s;
+} 

@@ -1,0 +1,36 @@
+.Container_Presentation {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 20px;
+}
+
+.Container_Presentation__img{
+    width: 300px;
+}
+
+.Container_Presentation__img img{
+    width: 100%;
+    border-radius: 50px;
+    border: 2px solid #000;
+}
+
+.Container_Presentation__div{
+    width: 600px;
+}
+
+.Container_Presentation__div button{
+    margin: 0px 5px 0px 0px;
+}
+
+@media (max-width: 1035px) {  
+    .Container_Presentation__img{
+        margin-top: 80px;
+    }    
+    .Container_Presentation__div{
+        margin-bottom: 80px;
+    }
+}

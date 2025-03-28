@@ -4,7 +4,5 @@ import App from './App/App.jsx'
 import './colors.css'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
     <App />
-  </StrictMode>,
 )

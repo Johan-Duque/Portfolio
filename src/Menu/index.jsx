@@ -28,6 +28,8 @@ function Menu () {
         document.documentElement.style.setProperty('--color-2', '#5C6878');
         document.documentElement.style.setProperty('--color-1', '#43474D');
         document.documentElement.style.setProperty('--color-0', '#000515');
+        document.documentElement.style.setProperty('--background-color', 'linear-gradient(-45deg, #000, #21232d, var(--color-0))'); 
+        document.documentElement.style.setProperty('--content-color', 'rgb(188, 196, 209)');
     }
 
     const LightMode = () => {
@@ -38,6 +40,8 @@ function Menu () {
         document.documentElement.style.setProperty('--color-4', '#006dff');
         document.documentElement.style.setProperty('--color-5', '#43474D');
         document.documentElement.style.setProperty('--color-6', '#000515');
+        document.documentElement.style.setProperty('--background-color', 'linear-gradient(-45deg, #fff, #c3c9e3, #a5b1ed)');
+        document.documentElement.style.setProperty('--content-color', 'rgb(43, 45, 48)');
     }
  
     return (

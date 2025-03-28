@@ -13,9 +13,18 @@
 }
 
 .Experience__Container_Divs p{
-    color: var(--color-6);
+    color: var(--content-color);
     border-left: 3px solid var(--color-6);
     padding-left: 10px;
+}
+
+.Experience__Container_Divs p a{
+    color: var(--color-4);
+    text-decoration: none;
+}
+
+.Experience__Container_Divs p a:hover{
+    text-decoration: underline;
 }
 
 .Experience__Container_Developer {
@@ -39,10 +48,13 @@
 
 .Experience__Title1 {
     display: block;
+    display: flex;
+    align-items: center;
     width: 100%;
+    gap: 10px;
     text-align: left;
     font-size: var(--font-size-h1);
-    color: var(--color-4);
+    color: var(--color-6);
 }
 
 @media (max-height: 900px) {

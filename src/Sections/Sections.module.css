@@ -1,8 +1,20 @@
 .Sections {
-    background-color: var(--color-0);;
     box-sizing: border-box;
     width: 100%;
     height: 100vh;
+}
+
+@media (max-width: 1165px) {
+    .Sections:nth-child(4) {
+        height: auto;
+    }
+}
+
+
+@media (max-height: 700px) {
+    .Sections:nth-child(3) {
+        height: auto;
+    }
 }
 
 @media (max-width: 400px) {  
@@ -10,12 +22,6 @@
         .Sections:nth-child(3) {
             height: auto;
         }
-    }
-}
-
-@media (max-height: 700px) {
-    .Sections:nth-child(3) {
-        height: auto;
     }
 }
 

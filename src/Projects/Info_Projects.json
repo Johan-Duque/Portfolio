@@ -1,0 +1,35 @@
+{
+    "proyects": [
+      {
+        "id": 1,
+        "nombre": "Laboratorio Clinico",
+        "descripcion": "Desarrollo de un software de un Laboratorio Clínico como proyecto final, fue un trabajo grupal con otros 2 compañeros donde debíamos usar únicamente Lenguaje C. Usamos otras tecnologías como Git y GitHub para facilitar el desarrollo",
+        "url": "https://www.linkedin.com/in/johan-omar-duque-pereira-05160733a/overlay/1739400221673/single-media-viewer/?profileId=ACoAAFUp130BvW9Ye3cXgHG7Zn-Kl2IOKIkqr-E",
+        "img": "https://i.ibb.co/39BLWQ9Y/Energia-y-Fotones.png",
+        "tecnologías": ["C", "GIT", "GITHUB"]
+
+      }, {
+        "id": 2,
+        "nombre": "Trabajo de Fotones",
+        "descripcion": "Trabajo de química, relacionado con la energía cuántica y los fotones. además, de ver la historia de científicos como Max Plank y Albert Einstein",
+        "url": "https://johan-duque.github.io/web-quimica/",
+        "img": "https://i.ibb.co/39BLWQ9Y/Energia-y-Fotones.png",
+        "tecnologías": ["HTML", "CSS", "JS", "GIT", "GITHUB", "REACT", "VITE"]
+      }, {
+        "id": 3,
+        "nombre": "Trabajo de Fotones",
+        "descripcion": "Trabajo de química, relacionado con la energía cuántica y los fotones. además, de ver la historia de científicos como Max Plank y Albert Einstein",
+        "url": "https://johan-duque.github.io/web-quimica/",
+        "img": "https://i.ibb.co/39BLWQ9Y/Energia-y-Fotones.png",
+        "tecnologías": ["HTML", "CSS", "JS", "GIT", "GITHUB", "REACT", "VITE"]
+      }, {
+        "id": 3,
+        "nombre": "Trabajo de Fotones",
+        "descripcion": "Trabajo de química, relacionado con la energía cuántica y los fotones. además, de ver la historia de científicos como Max Plank y Albert Einstein",
+        "url": "https://johan-duque.github.io/web-quimica/",
+        "img": "https://i.ibb.co/39BLWQ9Y/Energia-y-Fotones.png",
+        "tecnologías": ["HTML", "CSS", "JS", "GIT", "GITHUB", "REACT", "VITE"]
+      }
+    ]
+}
+  

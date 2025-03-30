@@ -142,7 +142,7 @@ ul .Js {
 }
 
 .Container__Projects:hover .Container__Projects_LinksProject{
-    opacity: 1; /* Mostrar al hacer hover */
+    opacity: 1; 
     visibility: visible;
     transition: opacity var(--transition-back) ease, visibility var(--transition-back) linear var(--transition-back); /* Cambiamos el delay de visibilidad a 0s*/
 }

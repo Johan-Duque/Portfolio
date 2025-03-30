@@ -9,6 +9,8 @@ import { FaLinkedin } from "react-icons/fa";
 import { SiReaddotcv } from "react-icons/si";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
+import { SiPlatzi } from "react-icons/si"
+import { FaUniversity } from "react-icons/fa";
 
 function Home () {
     return (
@@ -21,7 +23,11 @@ function Home () {
                     </div>
                     <div className={styles.Container_Presentation__Info_AboutMe}> 
                         <h2>Sobre Mi <BsInfoCircleFill/></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem totam quibusdam reprehenderit amet nostrum deserunt provident quas! Ad modi at facere, possimus incidunt libero molestias unde eum odit reiciendis.</p>
+                        <p>Soy estudiante de Ingeniería Informática, se usar tecnologías relacionadas con el Front-End como <b><em> Java Script, HTML, CSS, React y TypeScript </em></b>. Además, también se usar lenguajes mas orientados al Backend como <b><em>Python, Java, C y C++</em></b></p>
+                        <ul>
+                            <a href="https://platzi.com/home/" target="blank">Contacto <SiPlatzi/></a>
+                            <a href="https://campuvirtual.com/" target="blank">Universidad <FaUniversity/> </a>
+                        </ul>
                     </div>
                </div>
 

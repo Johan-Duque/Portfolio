@@ -37,6 +37,8 @@
     flex-direction: column;
     border-radius: 50px;
     border: 3px solid var(--color-5);
+    gap: 0;
+    background-color: #eff8ff;
 }
 
 .Container_Presentation__Info_AboutMe h2{
@@ -49,8 +51,37 @@
 
 .Container_Presentation__Info_AboutMe p{
     display: block;
-    padding: 0 15px;
+    padding: 0 10px;
     text-align: center;
+    color: #000;
+}
+
+.Container_Presentation__Info_AboutMe ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    padding-right: 42px;
+}
+
+.Container_Presentation__Info_AboutMe ul a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    text-decoration: none;
+    background-color: var(--color-4);
+    color: var(--color-0);
+    border-radius: 10px;
+    border: 2px solid var(--color-5);
+    gap: 2px;
+    transition: background var(--transition-duration-1), color var(--transition-duration-1);
+}
+
+.Container_Presentation__Info_AboutMe ul a:hover{
+    background-color: var(--color-0);
     color: var(--color-6);
 }
 

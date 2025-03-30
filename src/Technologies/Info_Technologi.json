@@ -1,0 +1,79 @@
+{
+    "Lenguage": [
+      {
+        "id": 1,
+        "nombre": "JavaScript",
+        "background_color": "#fbff00",
+        "width": "1/4",
+        "color": "#000",
+        "description": "Aprendí JavaScript de manera autodidacta. Además, de cursar en la academia de Platzi donde saque certificaciones"
+      }, {
+        "id": 2,
+        "nombre": "React",
+        "background_color": "#00eaff",
+        "width": "4/6",
+        "color": "#000",
+        "description": "Aprendí React inicialmente con Platzi en donde me certifique. Después, aprendí más por mi propia cuenta"
+      }, {
+        "id": 3,
+        "nombre": "HTML",
+        "background_color": "#ff5e00",
+        "color": "#fff",
+        "description": "Aprendí HTML inicialmente por YouTube, después mejoré con Platzi y realizando proyectos"
+      }, {
+        "id": 4,
+        "nombre": "CSS",
+        "background_color": "#1875f8",
+        "color": "#fff",
+        "description": "Aprendí CSS inicialmente por YouTube, después mejoré con Platzi y realizando proyectos"
+      }, {
+        "id": 5,
+        "nombre": "TypeScript",
+        "background_color": "#1156b7",
+        "width": "3/6",
+        "color": "#fff",
+        "description": "Aprendí TypeScript 100% gracias a Platzi donde me certifique, actualmente sigo aprendiendo cosas más avanzadas sobre esta tecnología"
+      }, {
+        "id": 6,
+        "nombre": "Python",
+        "background_color": "#163047",
+        "width": "1/3",
+        "color": "#fbff00",
+        "description": "Aprendí Python de manera autodidacta, viendo YouTube y realizando ejercicios de Lógica, pero pienso especializarme más adelante para usar Django y ser más completo"
+      }, {
+        "id": 7,
+        "nombre": "Java",
+        "background_color": "#fff",
+        "width": "3/5",
+        "color": "#111063",
+        "description": "Aprendí Java por mi cuenta, además me certifiqué en el politécnico de Colombia, actualmente se usa en mi universidad"
+      }, {
+        "id": 8,
+        "nombre": "C / C++",
+        "background_color": "#5e1e99",
+        "color": "#fff",
+        "description": "Aprendí C en la Universidad, aunque también viendo YouTube y realizando proyectos finales"
+      }
+    ],
+    "Tool": [
+      {
+        "id": 1,
+        "nombre": "Git",
+        "background_color": "#d41313",
+        "color": "#fff",
+        "description": "Aprendí Git inicialmente por YouTube, aunque después termine de entender mejor el control de versiones con Platzi, en donde me certifique"
+      }, {
+        "id": 2,
+        "nombre": "GitHub",
+        "background_color": "#000",
+        "color": "#fff",
+        "description": "Aprendí GitHub inicialmente por mi cuenta, luego con Platzi estudie el uso de Dependabot, CodeSpaces, Tokens, SSH, etc. Además de certificarme"
+      }, {
+        "id": 3,
+        "nombre": "VisualStudio",
+        "background_color": "#1875f8",
+        "color": "#fff",
+        "description": "Aprendí a usar Visual Studio Code por mi cuenta en un inicio, luego se convirtió en mi editor de codigo principal para cualquier proyecto"
+      }
+    ]
+}

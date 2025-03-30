@@ -8,8 +8,9 @@ import { MdOutlineWork } from "react-icons/md";
 function Experience () {
     return (
       <Div_Sections> 
-          <div className={styles.Experience__Container}>
-            <h2 className={styles.Experience__Title1}>Experiencia <MdOutlineWork/></h2>
+        <div className={styles.test_ex}>
+        <h2 className={styles.Experience__Title1}>Experiencia <MdOutlineWork/></h2>
+          <div className={styles.Experience__Container}>       
               <div className={`${styles.Experience__Container_Divs} ${styles.Experience__Container_Developer}`}>
                 <h3 className={styles.Experience__Titles}>Programador / Desarrollador <FaFileCode/> </h3>
                   <h4><li>Laboratorio Clinico</li></h4>
@@ -29,6 +30,7 @@ function Experience () {
                     <p>Trabajé como dependiente de uno de los negocios de mi madre enfocado en la venta de dulces para postres, ayudando también en el apartado del inventario. <a href="https://www.instagram.com/omka.tumarca?igsh=MXAxa2dybnkzeDFmeQ==" target="blank">Ver mas...</a> </p>
               </div>    
           </div>
+        </div>
       </Div_Sections>
     )
 }

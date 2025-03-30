@@ -1,11 +1,22 @@
-.Experience__Container {
+.test_ex {
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 0;
+}
+
+.Experience__Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    gap: 10px;
+    gap: 0px;
 }
 
 .Experience__Container_Divs{
@@ -28,11 +39,11 @@
 }
 
 .Experience__Container_Developer {
-    width: 90%;
+    width: 95%;
 }
 
 .Experience__Container_Employee {
-    width: 90%;
+    width: 95%;
 }
 
 .Experience__Titles {
@@ -47,10 +58,11 @@
 }
 
 .Experience__Title1 {
+    height: auto;
     display: block;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 95%;
     gap: 10px;
     text-align: left;
     font-size: var(--font-size-h1);

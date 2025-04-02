@@ -1,66 +1,47 @@
-import React, { useState } from "react";
-import styles from './Menu.module.css'
-import { MdDarkMode } from "react-icons/md";
-import { MdLightMode } from "react-icons/md";
+import React, { useContext } from "react";
+import styles from './Menu.module.css';
+import Spanish from '../../public/spain.png';
+import English from '../../public/united-kingdom.png';
+import { CreateContext } from "../Context/CreateContext";
 
-function Menu () {
+// ICONS //
+import { MdDarkMode, MdLightMode } from "react-icons/md";
 
-    if (localStorage.getItem('Theme') === null) {
-        localStorage.setItem('Theme', 'Dark');
-    } 
+function Menu() {
 
-    const Theme = localStorage.getItem('Theme');
-    let mode_value = null;
+    const {
+        theme,
+        toggleTheme,
+        language,
+        togglelanguage
+    } = useContext( CreateContext );
 
-    (Theme == 'Dark') ? mode_value = true : mode_value = false;
-
-    const [mode, setMode] = useState(mode_value);
-
-    const setTheme = () => {
-        setMode(!mode);
-    }
-
-    const DarkMode = () => {
-        document.documentElement.style.setProperty('--color-6', '#fff');
-        document.documentElement.style.setProperty('--color-5', '#4493F8');
-        document.documentElement.style.setProperty('--color-4', '#598BCD');
-        document.documentElement.style.setProperty('--color-3', '#627EA2');
-        document.documentElement.style.setProperty('--color-2', '#5C6878');
-        document.documentElement.style.setProperty('--color-1', '#43474D');
-        document.documentElement.style.setProperty('--color-0', '#000515');
-        document.documentElement.style.setProperty('--background-color', 'linear-gradient(-45deg, #000, #21232d, var(--color-0))'); 
-        document.documentElement.style.setProperty('--content-color', 'rgb(188, 196, 209)');
-    }
-
-    const LightMode = () => {
-        document.documentElement.style.setProperty('--color-0', '#fff');
-        document.documentElement.style.setProperty('--color-1', '#4493F8');
-        document.documentElement.style.setProperty('--color-2', '#598BCD');
-        document.documentElement.style.setProperty('--color-3', '#627EA2');
-        document.documentElement.style.setProperty('--color-4', '#006dff');
-        document.documentElement.style.setProperty('--color-5', '#43474D');
-        document.documentElement.style.setProperty('--color-6', '#000515');
-        document.documentElement.style.setProperty('--background-color', 'linear-gradient(-45deg, #fff, #c3c9e3, #a5b1ed)');
-        document.documentElement.style.setProperty('--content-color', 'rgb(43, 45, 48)');
-    }
- 
-    return (
-        <header className={styles.Header}>
-            <nav className={styles.Menu}>
-                <div className={styles.Menu__div}>  
-                    <a href="#1">Inicio</a>
-                    <a href="#2">Experiencia</a>
-                    <a href="#3">Proyectos</a>
-                    <a href="#4">Habilidades</a>
-                    <button onClick={setTheme}> 
-                        {(mode == true) ? DarkMode() : LightMode()} 
-                        {(mode == true) ? <MdDarkMode className={`${styles.Menu__Icons} ${styles.Menu__Icons_Dark}`}/> : <MdLightMode className={`${styles.Menu__Icons} ${styles.Menu__Icons_Light}`}/>} 
-                        {(mode == true) ? localStorage.setItem('Theme', 'Dark') : localStorage.setItem('Theme', 'Light')}
-                    </button>
-                </div>
-            </nav>
-        </header>
-    )
+  return (
+    <header className={styles.Header}>
+      <nav className={styles.Menu}>
+        <div className={styles.Menu__div}>
+          <a href="#1">{language == 'Spanish' ? 'Inicio' : 'Home'}</a>
+          <a href="#2">{language == 'Spanish' ? 'Experiencia' : 'Experience'}</a>
+          <a href="#3">{language == 'Spanish' ? 'Proyectos' : 'Projects'}</a>
+          <a href="#4">{language == 'Spanish' ? 'Habilidades' : 'Skills'}</a>
+          <button onClick={toggleTheme} className={styles.Menu__Button_Theme}>
+            {theme === 'Dark' ? (
+              <MdDarkMode className={`${styles.Menu__Icons} ${styles.Menu__Icons_Dark}`} />
+            ) : (
+              <MdLightMode className={`${styles.Menu__Icons} ${styles.Menu__Icons_Light}`} />
+            )}
+          </button>
+          <button onClick={togglelanguage} className={styles.Menu__Button_Language}>
+            {language === 'Spanish' ? (
+                <img src={Spanish} alt="Spanish" />
+            ) : (
+                <img src={English} alt="English" />
+            )}
+          </button>
+        </div>
+      </nav>
+    </header>
+  );
 }
 
-export { Menu }
+export { Menu };

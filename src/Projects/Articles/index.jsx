@@ -1,7 +1,7 @@
 import styles from './Articles.module.css'
 import React from 'react';
 import { useContext } from 'react';
-import { context_icons } from '../../Context/context_icons'
+import { CreateContext } from '../../Context/CreateContext'
 
 // Icons //
 import { FaGithub } from "react-icons/fa";
@@ -10,7 +10,7 @@ import { FaLink } from "react-icons/fa";
 function Article ({Title, Description, Img, Technologies}) {
 
     let array = [];
-    const { CreateIcons } = useContext(context_icons);
+    const { CreateIcons } = useContext(CreateContext);
 
     for(let i of Technologies) {
         array.push(CreateIcons(i));

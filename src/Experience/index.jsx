@@ -13,7 +13,6 @@ function Experience () {
     // JSON //
     const { Data_JSON, language } = React.useContext( CreateContext ); 
     const Experiences_Info = Data_JSON.Experience;
-    console.log(Experiences_Info[1].Work_Experience[0])
 
     return (
       <Div_Sections> 
@@ -25,8 +24,8 @@ function Experience () {
 
                 <div class={styles.timeline_box}>
 
-                {Experiences_Info[0].Programming_Experience.map(exp => {
-                  return( <Experience_Article Title={exp.Title} Content={exp.Content}></Experience_Article> )
+                {Experiences_Info[0].Programming_Experience.map((exp, index) => {
+                  return( <Experience_Article Title={exp.Title} Content={exp.Content} key={index}></Experience_Article> )
                 })}
                 </div>
             </div>
@@ -37,8 +36,8 @@ function Experience () {
                 <div class={styles.timeline_box}>
 
 
-                {Experiences_Info[1].Work_Experience.map(exp => {
-                    return( <Experience_Article Title={exp.Title} Content={exp.Content}></Experience_Article> )
+                {Experiences_Info[1].Work_Experience.map((exp, index) => {
+                    return( <Experience_Article Title={exp.Title} Content={exp.Content} key={index}></Experience_Article> )
                 })}
 
                 </div>

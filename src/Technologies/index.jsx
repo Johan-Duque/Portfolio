@@ -20,16 +20,16 @@ function Technologies () {
                 <h2 className={styles.Technologies__Title}>{language == 'Spanish' ? 'Habilidades' : 'Skills'}<AiOutlineBulb/> </h2>
                 <div className={styles.Technologies__Content}>
                     <div className={styles.Technologies__Content_Languages}>
-                        {Languages_Info.map(skill => {
+                        {Languages_Info.map((skill, index) => {
                             return(
-                                <Technologi key={skill.id} Name={skill.nombre} background_color={skill.background_color} width={skill.width} color_i={skill.color} description={skill.description}/>
+                                <Technologi key={index} Name={skill.nombre} background_color={skill.background_color} width={skill.width} color_i={skill.color} description={skill.description}/>
                             )
                         })}
                     </div>
                     <div className={styles.Technologies__Content_Tools}>
-                    {Tools_Info.map(skill => {
+                    {Tools_Info.map((skill, index) => {
                             return(
-                                <Technologi key={skill.id} Name={skill.nombre} background_color={skill.background_color} width={skill.width} color_i={skill.color} description={skill.description}/>
+                                <Technologi key={index} Name={skill.nombre} background_color={skill.background_color} width={skill.width} color_i={skill.color} description={skill.description}/>
                             )
                         })}
                     </div>

@@ -1,4 +1,4 @@
-import React, { Children, useEffect, useState } from "react";
+import React, { Children, useEffect, useState  } from "react";
 import { CreateContext } from "./CreateContext";
 import json_information from "./information.json";
 
@@ -11,7 +11,7 @@ function Context ({ children }) {
     // Icons //
     const Technologie_List =  json_information.Technologie_List[0];
     
-    const CreateIcons = (name) => {
+    const CreateIcons = (name, index) => {
         if (Technologie_List.hasOwnProperty(name)) { // Check if the name exists as a key.
             const [prefix, iconName] = Technologie_List[name];
             let IconComponent = null;
@@ -30,7 +30,7 @@ function Context ({ children }) {
                     return null; // Return null if prefix is not recognized.
             }
     
-            if (IconComponent) return React.createElement(IconComponent);
+            if (IconComponent) return React.createElement(IconComponent, { key: index});
             return null; // Return null if IconComponent is not found.
         }
         return null; // Return null if the technology name isn't found.
@@ -108,9 +108,40 @@ function Context ({ children }) {
           "Languages": json_information.English.Languages, 
           "Tools": json_information.English.Tools
         };  
-      
+
+      // Intersaction // 
+
+       const [sectionId, setSectionId] = useState(1);
+
+       const toggleSectionId = (id) => {
+        setSectionId(id);
+      };
+
+      // url json // 
+
+      useEffect(() => {
+        fetch('https://drive.google.com/uc?export=download&id=1cm-K6rg4RUaVqjc8DTIoUwZxcYsuN5h6')
+        .then(response => response.json())
+        .then(data => {
+          // Aquí puedes trabajar con los datos JSON
+          console.log(data);
+        })
+        .catch(error => {
+          console.error('Error al obtener el archivo JSON:', error);
+        });
+      }, [theme]);      
+          
     return (
-        <CreateContext.Provider value={{ CreateIcons, toggleTheme, theme, togglelanguage, language, Data_JSON}}>
+        <CreateContext.Provider value={{ 
+          CreateIcons, 
+          toggleTheme, 
+          theme, 
+          togglelanguage, 
+          language, 
+          Data_JSON, 
+          sectionId, 
+          toggleSectionId
+          }}>
             {children}
         </CreateContext.Provider>
     );

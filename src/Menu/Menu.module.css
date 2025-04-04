@@ -26,16 +26,15 @@ header {
 .Menu a {
     text-decoration: none;
     margin: 5px;
-    color: var(--color-6);
     transition: color var(--transition-duration-1);
 }
 
 .Menu a:hover {
-    color: var(--color-4);
+    color: var(--color-4) !important;
 }
 
 .Menu .selected {
-    color: var(--color-4);
+    color: var(--color-4) !important;
 }
 
 .Menu__Icons {
@@ -73,11 +72,9 @@ header {
 /* CSS RESPONSIVE */
 
 @media (max-width: 450px) {
-
     .Menu {
         margin-top: 0px;
     }
-
     .Menu .Menu__div{
         width: 100%;
         border-radius: 0px;
@@ -86,23 +83,17 @@ header {
         justify-content: center;
         font-size: 14px;
     }
+}
 
-    /*
-
-    .Menu__div a{
-        display: none;
-    } 
-
-    .Menu__div .Menu__Button_Theme{
-        position: absolute;
-        left: 10px;
-    } 
-
-    .Menu__div .Menu__Button_Responsive{
-        display: flex;
-        position: absolute;
-        right: 10px;
-        font-size: 20px;
-        color: var(--color-6);
-    } */
+@media (max-width: 360px) {
+    .Menu .Menu__Button_Language{
+        width: 35px;
+   }
+ 
+    .Menu a {
+        text-decoration: none;
+        margin: 3px;
+        transition: color var(--transition-duration-1);
+        font-size: 13px
+    }
 }

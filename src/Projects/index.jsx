@@ -19,8 +19,8 @@ function Projects () {
         <div className={styles.Projects__Container}>
         <h2 className={styles.Projects__Title}>{language == 'Spanish' ? 'Proyectos' : 'Projects'}<FaCode/> </h2>
         <div className={styles.test_p}></div>
-        {Projects_Info.map(project => {
-          if(typeof project !== 'string') return( <Article Title={project.nombre} Description={project.descripcion} Img={project.img} Technologies={project.tecnologías} key={project.id}></Article> )
+        {Projects_Info.map((project, index) => {
+          if(typeof project !== 'string') return( <Article Title={project.nombre} Description={project.descripcion} Img={project.img} Technologies={project.tecnologías} key={index}></Article> )
         })}
         </div>
         </div>

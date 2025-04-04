@@ -9,11 +9,12 @@ import { FaLink } from "react-icons/fa";
 
 function Article ({Title, Description, Img, Technologies}) {
 
-    let array = [];
+    let array = [], counter = 0;
     const { CreateIcons } = useContext(CreateContext);
 
     for(let i of Technologies) {
-        array.push(CreateIcons(i));
+        array.push(CreateIcons(i, counter));
+        counter++;
     }
 
     return(

@@ -49,7 +49,7 @@
     left: 15px;
     padding: 8px;
     color: #fff;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.434);
 }
 
 /* --- About Me --- */
@@ -222,6 +222,9 @@
     .Container_Presentation__Info {
         margin-top: 60px;
     }
+    .Container_Presentation__div button:last-child{
+        margin-top: 10px;
+    }  
 }
 
 

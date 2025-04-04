@@ -4,12 +4,6 @@
     height: 750px;
 }
 
-@media (max-width: 935px) {
-    .Sections:nth-child(2) {
-       
-    }
-}
-
 @media (max-width: 840px) {
     .Sections{
         height: auto;

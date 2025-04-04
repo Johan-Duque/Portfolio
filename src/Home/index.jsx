@@ -1,4 +1,4 @@
-import React, { useRef, useEffect} from "react"; // Importa useRef y useEffect
+import React, { useRef, useEffect, useState} from "react"; // Importa useRef y useEffect
 import { Div_Sections } from '../Sections/Divs_Sections';
 import styles from './Home.module.css';
 import { CreateContext } from '../Context/CreateContext'
@@ -14,29 +14,51 @@ import { FaUserCircle } from "react-icons/fa";
 import Typed from 'typed.js';
 import { FaAngleDoubleRight } from "react-icons/fa";
 
-
 function Home() {
 
     // JSON //
-    const { Data_JSON, language } = React.useContext( CreateContext ); 
+    const { Data_JSON, language, sectionId } = React.useContext( CreateContext ); 
     const Home_Info = Data_JSON.Home;
 
-    // Ref Type Effect //
-    const el = useRef(null); 
-
-    useEffect(() => {
-        if (el.current) { 
-            const typed = new Typed(el.current, {
-                strings: Home_Info[0].Card[1].Types, 
-                typeSpeed: 70,
-                loop: true, 
-                loopCount: Infinity, 
-            });
-            return () => {
-                typed.destroy();
-            };
+    const [typed_string, setTyped_string] = useState({
+        content: Home_Info[0].Card[1].Types,
+        loopCount: Infinity,
+      });
+    
+      const el = useRef(null);
+      const typedRef = useRef(null); 
+    
+      useEffect(() => {
+        if (sectionId !== 1) {
+          setTyped_string({ content: [Home_Info[0].Card[1].Types[2]], loopCount: 1 });
+        } else {
+          setTyped_string({content: Home_Info[0].Card[1].Types, loopCount: Infinity});
         }
-    }, [language]);
+      }, [sectionId, language]);
+    
+      useEffect(() => {
+        if (el.current) {
+          if (!typedRef.current) {
+            typedRef.current = new Typed(el.current, {
+              strings: typed_string.content,
+              typeSpeed: 70,
+              loop: true,
+              loopCount: typed_string.loopCount,
+            });
+          } else {
+            typedRef.current.strings = typed_string.content;
+            typedRef.current.loopCount = typed_string.loopCount;
+            typedRef.current.reset(); 
+          }
+    
+          return () => {
+            if (typedRef.current) {
+              typedRef.current.destroy();
+              typedRef.current = null;
+            }
+          };
+        }
+      }, [typed_string, language]);
 
     const data = {
         Img_Back: Home_Info[0].Card[0].Img,

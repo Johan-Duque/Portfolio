@@ -4,6 +4,10 @@
     height: 750px;
 }
 
+.Sections:last-child {
+    height: auto;
+}
+
 @media (max-width: 840px) {
     .Sections{
         height: auto;

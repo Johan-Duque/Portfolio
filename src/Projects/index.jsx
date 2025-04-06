@@ -11,7 +11,8 @@ function Projects () {
 
     // JSON // 
     const { Data_JSON, language } = React.useContext( CreateContext ); 
-    const Projects_Info = Data_JSON.Projects;
+    const Projects_Info = Data_JSON.Projects[0];
+    const Projects_Global = Data_JSON.Projects[1];
     
     return (      
       <Div_Sections>
@@ -20,7 +21,7 @@ function Projects () {
         <h2 className={styles.Projects__Title}>{language == 'Spanish' ? 'Proyectos' : 'Projects'}<FaCode/> </h2>
         <div className={styles.test_p}></div>
         {Projects_Info.map((project, index) => {
-          if(typeof project !== 'string') return( <Article Title={project.nombre} Description={project.descripcion} Img={project.img} Technologies={project.tecnologías} key={index}></Article> )
+          return( <Article Title={project.name} Description={project.description} Img={Projects_Global[index].img} Technologies={Projects_Global[index].Technologies} urls={Projects_Global[index].urls} key={index}></Article> )
         })}
         </div>
         </div>

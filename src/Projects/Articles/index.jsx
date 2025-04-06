@@ -7,7 +7,7 @@ import { CreateContext } from '../../Context/CreateContext'
 import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
 
-function Article ({Title, Description, Img, Technologies}) {
+function Article ({Title, Description, Img, Technologies, urls}) {
 
     let array = [], counter = 0;
     const { CreateIcons } = useContext(CreateContext);
@@ -31,8 +31,8 @@ function Article ({Title, Description, Img, Technologies}) {
                 </div>
             </div>
             <div className={styles.Container__Projects_LinksProject}>
-                    <a href="https://johan-duque.github.io/web-quimica/" target='blank'><FaLink/></a>
-                    <a href="https://github.com/Johan-Duque" target='blank'><FaGithub/></a>
+                    <a href={urls[0]} target='blank'><FaLink/></a>
+                    <a href={urls[1]} target='blank'><FaGithub/></a>
             </div>
         </article>
     )

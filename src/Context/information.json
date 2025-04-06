@@ -1,18 +1,167 @@
 { 
 
+    "Global" : {
+      "Home" : {
+        "img": "https://i.ibb.co/SwK9nx32/Foto-portfolio-1.webp",
+        "urls_aboutMe": ["https://www.instagram.com/unet_oficial/?hl=es", "https://www.instagram.com/platzi/?hl=es-la"],
+        "urls_presentation" : ["mailto:jhoandp1995@gmail.com", "https://www.linkedin.com/in/johan-omar-duque-pereira-05160733a/", "https://github.com/Johan-Duque", "https://docs.google.com/document/d/17u_4RzUgfRf-UocXM7h4UoN2zKnYDcHQ/edit?usp=sharing&ouid=111385114366457343190&rtpof=true&sd=true"]
+      },
+      "Projects": [
+      {
+        "urls": ["https://johan-duque.github.io/web-quimica/", "https://github.com/Johan-Duque/Portfolio.git"],
+        "img": "https://i.ibb.co/M0nygzw/Laboratorio-Clinico.png",
+        "Technologies": ["C / C++", "Git", "GitHub"]
+      }, {
+        "urls": ["https://johan-duque.github.io/web-quimica/", "https://github.com/Johan-Duque/web-quimica.git"],
+        "img": "https://i.ibb.co/39BLWQ9Y/Energia-y-Fotones.png",
+        "Technologies": ["HTML", "CSS", "JavaScript", "React","Git", "GitHub", "Vite"]
+      }, {
+        "urls": ["https://johan-duque.github.io/web-quimica/", "https://github.com/Johan-Duque/Portfolio.git"],
+        "img": "https://i.ibb.co/39BLWQ9Y/Energia-y-Fotones.png",
+        "Technologies": ["HTML", "CSS", "JavaScript", "React","Git", "GitHub", "Vite"]
+      }, {
+        "urls": ["https://johan-duque.github.io/web-quimica/", "https://github.com/Johan-Duque/Portfolio.git"],
+        "img": "https://i.ibb.co/39BLWQ9Y/Energia-y-Fotones.png",
+        "Technologies": ["HTML", "CSS", "JavaScript", "React","Git", "GitHub", "Vite"]
+      }
+      ],
+      "Languages": [
+        {
+          "name": "JavaScript",
+          "background_color": "#fbff00",
+          "width": "1/4",
+          "color": "#000"
+        }, {
+          "name" : "React",
+          "background_color": "#00eaff",
+          "width": "4/6",
+          "color": "#000"
+        }, {
+          "name" : "HTML",
+          "background_color": "#ff5e00",
+          "color": "#fff"
+        }, {
+          "name": "CSS",
+          "background_color": "#1875f8",
+          "color": "#fff"
+        }, {
+          "name": "TypeScript",
+          "background_color": "#1156b7",
+          "width": "3/6",
+          "color": "#fff"
+        }, {
+          "name": "Python",
+          "background_color": "#163047",
+          "width": "1/3",
+          "color": "#fbff00"
+        }, {
+          "name": "Java",
+          "background_color": "#fff",
+          "width": "3/5",
+          "color": "#111063"
+        }, {
+          "name": "C / C++",
+          "background_color": "#5e1e99",
+          "color": "#fff"
+        }
+      ],
+      "Tools": [
+        {
+          "name": "Git",
+          "background_color": "#d41313",
+          "color": "#fff"
+        }, {
+          "name": "GitHub",
+          "background_color": "#000",
+          "color": "#fff"
+        }, {
+          "name": "VisualStudio",
+          "background_color": "#1875f8",
+          "color": "#fff"
+        }
+      ],
+      "Technologie_List": [
+        {
+          "JavaScript": ["Fa", "Js"],
+          "HTML": ["Fa", "Html5"],
+          "CSS": ["Fa", "Css3"],
+          "React": ["Fa", "React"],
+          "TypeScript": ["Si", "Typescript"],
+          "Git": ["Fa", "GitAlt"],
+          "GitHub": ["Fa", "Github"],
+          "Java": ["Fa", "Java"],
+          "C / C++": ["Fa", "Copyright"],
+          "Python": ["Fa", "Python"],
+          "VisualStudio": ["Bi", "LogoVisualStudio"],
+          "SQL": ["Fa", "Database"],
+          "Vite": ["Si", "Vite"],
+          "Ux" : ["Tb", "UxCircle"]
+        }
+      ], 
+      "Certifications" : [
+        {
+          "icon": "JavaScript",
+          "background_color": "#fbff00",
+          "color": "#000",
+          "img": "https://i.ibb.co/Y7mXbVNM/diploma-document-object-model-page-0001.jpg"
+        },
+        {
+          "img": "https://i.ibb.co/wh9VbqB3/diploma-javascript-page-0001.jpg"
+        },
+        {
+          "img" : "https://i.ibb.co/fYBBMWtV/diploma-patrones-diseno-creacionales-page-0001.jpg"
+        },
+        {
+          "icon": "React",
+          "background_color": "#00eaff",
+          "color": "#000",
+          "img": "https://i.ibb.co/PvgzNsF7/diploma-react-page-0001.jpg"
+        },
+        {
+          "icon": "HTML",
+          "background_color": "#ff5e00",
+          "color": "#fff",
+          "img": "https://i.ibb.co/6Rg6Lb9Y/img.jpg"
+        },
+        {
+          "icon": "CSS",
+          "background_color": "#1875f8",
+          "color": "#fff"
+        },
+        {
+          "icon": "TypeScript",
+          "background_color": "#1156b7",
+          "color": "#fff",
+          "img": "https://i.ibb.co/spvStFnz/diploma-typescript-22-page-0001.jpg"
+        }, {
+          "icon": "Git",
+          "background_color": "#d41313",
+          "color": "#fff"
+        }, {
+          "icon": "GitHub",
+          "background_color": "#000",
+          "color": "#fff",
+          "img": "https://i.ibb.co/67KPC91p/diploma-gitgithub-page-0001.jpg"
+        } , {
+          "icon": "Ux",
+          "background_color": "#000",
+          "color": "#fff",
+          "img": "https://i.ibb.co/MxsKgQRP/diploma-diseno-programadores-page-0001.jpg"
+        }
+
+      ]
+    },
+
     "Spanish" : {
         "Home": [
           { "Card": [
               {
-                  "Img": "https://i.ibb.co/SwK9nx32/Foto-portfolio-1.webp",
                   "Title": "Sobre mí",
-                  "Content": ["Me llamo Johan Omar Duque Pereira. Actualmente realizo proyectos de manera autodidacta. Además, sigo estudiando la carrera de Ingeniería Informática en mi","universidad",". Aunque también sigo aprendiendo mediante cursos en la academia de","Platzi","donde he aprendido tecnologías como TypeScript o React."],
-                  "Urls": ["https://www.instagram.com/unet_oficial/?hl=es", "https://www.instagram.com/platzi/?hl=es-la"]
+                  "Content": ["Me llamo Johan Omar Duque Pereira. Actualmente realizo proyectos de manera autodidacta. Además, sigo estudiando la carrera de Ingeniería Informática en mi","universidad",". Aunque también sigo aprendiendo mediante cursos en la academia de","Platzi","donde he aprendido tecnologías como TypeScript o React."]
               },
               {
                   "Types": ["Desarrollador Front-End", "Ingeniero Informático", "Programador"],
-                  "Content": ["Soy estudiante de Ingeniería Informática, se usar tecnologías relacionadas con el Front-End como", "Java Script, HTML, CSS, React y TypeScript.", "Además, también se usar lenguajes mas orientados al Backend como", "Python, Java, C y C++."],
-                  "Urls": ["mailto:jhoandp1995@gmail.com", "https://www.linkedin.com/in/johan-omar-duque-pereira-05160733a/", "https://github.com/Johan-Duque", "https://docs.google.com/document/d/17u_4RzUgfRf-UocXM7h4UoN2zKnYDcHQ/edit?usp=sharing&ouid=111385114366457343190&rtpof=true&sd=true"]
+                  "Content": ["Soy estudiante de Ingeniería Informática, se usar tecnologías relacionadas con el Front-End como", "Java Script, HTML, CSS, React y TypeScript.", "Además, también se usar lenguajes mas orientados al Backend como", "Python, Java, C y C++."]
               }
             ]
           }
@@ -56,114 +205,48 @@
           }
         ],
     
-        "Projects": ["Proyectos",
+        "Projects": [
           {
-            "id": 1,
-            "nombre": "Laboratorio Clinico",
-            "descripcion": "Desarrollo de un software de un Laboratorio Clínico como proyecto final, fue un trabajo grupal con otros 2 compañeros donde debíamos usar únicamente Lenguaje C. Usamos otras tecnologías como Git y GitHub para facilitar el desarrollo",
-            "url": "https://www.linkedin.com/in/johan-omar-duque-pereira-05160733a/overlay/1739400221673/single-media-viewer/?profileId=ACoAAFUp130BvW9Ye3cXgHG7Zn-Kl2IOKIkqr-E",
-            "img": "https://i.ibb.co/M0nygzw/Laboratorio-Clinico.png",
-            "tecnologías": ["C / C++", "Git", "GitHub"]
-    
+            "name": "Laboratorio Clinico",
+            "description": "Desarrollo de un software de un Laboratorio Clínico como proyecto final, fue un trabajo grupal con otros 2 compañeros donde debíamos usar únicamente Lenguaje C. Usamos otras tecnologías como Git y GitHub para facilitar el desarrollo"
           }, {
-            "id": 2,
-            "nombre": "Informe de Fotones",
-            "descripcion": "Trabajo de química, relacionado con la energía cuántica y los fotones. además, de ver la historia de científicos como Max Plank y Albert Einstein",
-            "url": "https://johan-duque.github.io/web-quimica/",
-            "img": "https://i.ibb.co/39BLWQ9Y/Energia-y-Fotones.png",
-            "tecnologías": ["HTML", "CSS", "JavaScript", "React","Git", "GitHub", "Vite"]
+            "name": "Informe de Fotones",
+            "description": "Trabajo de química, relacionado con la energía cuántica y los fotones. además, de ver la historia de científicos como Max Plank y Albert Einstein"
           }, {
-            "id": 3,
-            "nombre": "Trabajo de Fotones",
-            "descripcion": "Trabajo de química, relacionado con la energía cuántica y los fotones. además, de ver la historia de científicos como Max Plank y Albert Einstein",
-            "url": "https://johan-duque.github.io/web-quimica/",
-            "img": "https://i.ibb.co/Y9Hpqgt/diploma-patrones-diseno-creacionales.jpg",
-            "tecnologías": ["HTML", "CSS", "JavaScript", "React","Git", "GitHub", "Vite"]
+            "name": "Informe de Fotones",
+            "description": "Trabajo de química, relacionado con la energía cuántica y los fotones. además, de ver la historia de científicos como Max Plank y Albert Einstein"
           }, {
-            "id": 4,
-            "nombre": "Trabajo de Fotones",
-            "descripcion": "Trabajo de química, relacionado con la energía cuántica y los fotones. además, de ver la historia de científicos como Max Plank y Albert Einstein",
-            "url": "https://johan-duque.github.io/web-quimica/",
-            "img": "https://i.ibb.co/Y9Hpqgt/diploma-patrones-diseno-creacionales.jpg",
-            "tecnologías": ["HTML", "CSS", "JavaScript", "React","Git", "GitHub", "Vite"]
+            "name": "Informe de Fotones",
+            "description": "Trabajo de química, relacionado con la energía cuántica y los fotones. además, de ver la historia de científicos como Max Plank y Albert Einstein"
           }
         ],
     
         "Languages": [
             {
-              "id": 1,
-              "nombre": "JavaScript",
-              "background_color": "#fbff00",
-              "width": "1/4",
-              "color": "#000",
               "description": "Aprendí JavaScript de manera autodidacta. Además, de cursar en la academia de Platzi donde saque certificaciones"
             }, {
-              "id": 2,
-              "nombre": "React",
-              "background_color": "#00eaff",
-              "width": "4/6",
-              "color": "#000",
               "description": "Aprendí React inicialmente con Platzi en donde me certifique. Después, aprendí más por mi propia cuenta"
             }, {
-              "id": 3,
-              "nombre": "HTML",
-              "background_color": "#ff5e00",
-              "color": "#fff",
               "description": "Aprendí HTML inicialmente por YouTube, después mejoré con Platzi y realizando proyectos"
             }, {
-              "id": 4,
-              "nombre": "CSS",
-              "background_color": "#1875f8",
-              "color": "#fff",
               "description": "Aprendí CSS inicialmente por YouTube, después mejoré con Platzi y realizando proyectos"
             }, {
-              "id": 5,
-              "nombre": "TypeScript",
-              "background_color": "#1156b7",
-              "width": "3/6",
-              "color": "#fff",
               "description": "Aprendí TypeScript 100% gracias a Platzi donde me certifique, actualmente sigo aprendiendo cosas más avanzadas sobre esta tecnología"
             }, {
-              "id": 6,
-              "nombre": "Python",
-              "background_color": "#163047",
-              "width": "1/3",
-              "color": "#fbff00",
               "description": "Aprendí Python de manera autodidacta, viendo YouTube y realizando ejercicios de Lógica, pero pienso especializarme más adelante para usar Django y ser más completo"
             }, {
-              "id": 7,
-              "nombre": "Java",
-              "background_color": "#fff",
-              "width": "3/5",
-              "color": "#111063",
               "description": "Aprendí Java por mi cuenta, además me certifiqué en el politécnico de Colombia, actualmente se usa en mi universidad"
             }, {
-              "id": 8,
-              "nombre": "C / C++",
-              "background_color": "#5e1e99",
-              "color": "#fff",
               "description": "Aprendí C en la Universidad, aunque también viendo YouTube y realizando proyectos finales"
             }
         ],
     
         "Tools": [
             {
-              "id": 1,
-              "nombre": "Git",
-              "background_color": "#d41313",
-              "color": "#fff",
               "description": "Aprendí Git inicialmente por YouTube, aunque después termine de entender mejor el control de versiones con Platzi, en donde me certifique"
             }, {
-              "id": 2,
-              "nombre": "GitHub",
-              "background_color": "#000",
-              "color": "#fff",
               "description": "Aprendí GitHub inicialmente por mi cuenta, luego con Platzi estudie el uso de Dependabot, CodeSpaces, Tokens, SSH, etc. Además de certificarme"
             }, {
-              "id": 3,
-              "nombre": "VisualStudio",
-              "background_color": "#1875f8",
-              "color": "#fff",
               "description": "Aprendí a usar Visual Studio Code por mi cuenta en un inicio, luego se convirtió en mi editor de codigo principal para cualquier proyecto"
             }
         ]
@@ -174,15 +257,12 @@
         "Home": [
           { "Card": [
               {
-                  "Img": "https://i.ibb.co/SwK9nx32/Foto-portfolio-1.webp",
                   "Title": "About me",
-                  "Content": ["My name is Johan Omar Duque Pereira. I am currently working on self-taught projects. Additionally, I continue to study Computer Engineering at my","University",". while also learning through courses at the","Platzi","academy, where I have learned technologies like TypeScript or React."],
-                  "Urls": ["https://www.instagram.com/unet_oficial/?hl=es", "https://www.instagram.com/platzi/?hl=es-la"]
+                  "Content": ["My name is Johan Omar Duque Pereira. I am currently working on self-taught projects. Additionally, I continue to study Computer Engineering at my","University",". while also learning through courses at the","Platzi","academy, where I have learned technologies like TypeScript or React."]
               },
               {
                   "Types": ["Front-End Developer", "Software Engineer", "Programmer"],
-                  "Content": ["I am a Computer Engineering student, and I know how to use Front-End related technologies such as", "Java Script, HTML, CSS, React y TypeScript.", "Additionally, I also know how to use more Backend-oriented languages like", "Python, Java, and C."],
-                  "Urls": ["mailto:jhoandp1995@gmail.com", "https://www.linkedin.com/in/johan-omar-duque-pereira-05160733a/", "https://github.com/Johan-Duque", "https://docs.google.com/document/d/17u_4RzUgfRf-UocXM7h4UoN2zKnYDcHQ/edit?usp=sharing&ouid=111385114366457343190&rtpof=true&sd=true"]
+                  "Content": ["I am a Computer Engineering student, and I know how to use Front-End related technologies such as", "Java Script, HTML, CSS, React y TypeScript.", "Additionally, I also know how to use more Backend-oriented languages like", "Python, Java, and C."]
               }
             ]
           }
@@ -226,147 +306,62 @@
           }
         ],
     
-        "Projects": ["Projects",
+        "Projects": [
           {
-            "id": 1,
-            "nombre": "Clinical Laboratory",
-            "descripcion": "Development of a Clinical Laboratory software as a final project. It was a group work with 2 other classmates where we had to use only C Language. We used other technologies like Git and GitHub to facilitate development.",
-            "url": "https://www.linkedin.com/in/johan-omar-duque-pereira-05160733a/overlay/1739400221673/single-media-viewer/?profileId=ACoAAFUp130BvW9Ye3cXgHG7Zn-Kl2IOKIkqr-E",
-            "img": "https://i.ibb.co/M0nygzw/Laboratorio-Clinico.png",
-            "tecnologías": ["C / C++", "Git", "GitHub"]
+            "name": "Clinical Laboratory",
+            "description": "Development of a Clinical Laboratory software as a final project. It was a group work with 2 other classmates where we had to use only C Language. We used other technologies like Git and GitHub to facilitate development."
           },
           {
-            "id": 2,
-            "nombre": "Photons Report",
-            "descripcion": "Chemistry work, related to quantum energy and photons. Furthermore, we explored the history of scientists like Max Plank and Albert Einstein.",
-            "url": "https://johan-duque.github.io/web-quimica/",
-            "img": "https://i.ibb.co/39BLWQ9Y/Energia-y-Fotones.png",
-            "tecnologías": ["HTML", "CSS", "JavaScript", "React", "Git", "GitHub", "Vite"]
-          },
-          {
-            "id": 3,
-            "nombre": "Photons Work",
-            "descripcion": "Chemistry work, related to quantum energy and photons. Furthermore, we explored the history of scientists like Max Plank and Albert Einstein.",
-            "url": "https://johan-duque.github.io/web-quimica/",
-            "img": "https://i.ibb.co/Y9Hpqgt/diploma-patrones-diseno-creacionales.jpg",
-            "tecnologías": ["HTML", "CSS", "JavaScript", "React", "Git", "GitHub", "Vite"]
-          },
-          {
-            "id": 4,
-            "nombre": "Photons Work",
-            "descripcion": "Chemistry work, related to quantum energy and photons. Furthermore, we explored the history of scientists like Max Plank and Albert Einstein.",
-            "url": "https://johan-duque.github.io/web-quimica/",
-            "img": "https://i.ibb.co/Y9Hpqgt/diploma-patrones-diseno-creacionales.jpg",
-            "tecnologías": ["HTML", "CSS", "JavaScript", "React", "Git", "GitHub", "Vite"]
+            "name": "Photons Report",
+            "description": "Chemistry work, related to quantum energy and photons. Furthermore, we explored the history of scientists like Max Plank and Albert Einstein."
+          }, {
+            "name": "Photons Report",
+            "description": "Chemistry work, related to quantum energy and photons. Furthermore, we explored the history of scientists like Max Plank and Albert Einstein."
+          },           {
+            "name": "Photons Report",
+            "description": "Chemistry work, related to quantum energy and photons. Furthermore, we explored the history of scientists like Max Plank and Albert Einstein."
           }
         ],
     
         "Languages": [
           {
-            "id": 1,
-            "nombre": "JavaScript",
-            "background_color": "#fbff00",
-            "width": "1/4",
-            "color": "#000",
             "description": "I learned JavaScript self-taught. In addition, I took courses at the Platzi academy where I obtained certifications."
           },
           {
-            "id": 2,
-            "nombre": "React",
-            "background_color": "#00eaff",
-            "width": "4/6",
-            "color": "#000",
             "description": "I initially learned React with Platzi where I got certified. Afterwards, I learned more on my own."
           },
           {
-            "id": 3,
-            "nombre": "HTML",
-            "background_color": "#ff5e00",
-            "color": "#fff",
             "description": "I initially learned HTML through YouTube, then improved with Platzi and by doing projects."
           },
           {
-            "id": 4,
-            "nombre": "CSS",
-            "background_color": "#1875f8",
-            "color": "#fff",
             "description": "I initially learned CSS through YouTube, then improved with Platzi and by doing projects."
           },
           {
-            "id": 5,
-            "nombre": "TypeScript",
-            "background_color": "#1156b7",
-            "width": "3/6",
-            "color": "#fff",
             "description": "I learned TypeScript 100% thanks to Platzi where I got certified, currently I continue to learn more advanced things about this technology."
           },
           {
-            "id": 6,
-            "nombre": "Python",
-            "background_color": "#163047",
-            "width": "1/3",
-            "color": "#fbff00",
             "description": "I learned Python self-taught, watching YouTube and doing Logic exercises, but I plan to specialize further to use Django and be more complete."
           },
           {
-            "id": 7,
-            "nombre": "Java",
-            "background_color": "#fff",
-            "width": "3/5",
-            "color": "#111063",
             "description": "I learned Java on my own, and I also got certified at the polytechnic of Colombia, currently it is used in my university."
           },
           {
-            "id": 8,
-            "nombre": "C / C++",
-            "background_color": "#5e1e99",
-            "color": "#fff",
             "description": "I learned C at the University, also by watching YouTube and doing final projects."
           }
         ],
     
         "Tools": [
-          {
-            "id": 1,
-            "nombre": "Git",
-            "background_color": "#d41313",
-            "color": "#fff",
+          { 
             "description": "I learned Git initially through YouTube, although I later finished understanding version control better with Platzi, where I got certified."
           },
           {
-            "id": 2,
-            "nombre": "GitHub",
-            "background_color": "#000",
-            "color": "#fff",
             "description": "I learned GitHub initially on my own, then with Platzi I studied the use of Dependabot, CodeSpaces, Tokens, SSH, etc. In addition to getting certified."
           },
           {
-            "id": 3,
-            "nombre": "VisualStudio",
-            "background_color": "#1875f8",
-            "color": "#fff",
             "description": "I learned to use Visual Studio Code on my own at first, then it became my main code editor for any project."
           }
         ]
       }
-    ,
 
-    "Technologie_List": [
-      {
-        "JavaScript": ["Fa", "Js"],
-        "HTML": ["Fa", "Html5"],
-        "CSS": ["Fa", "Css3"],
-        "React": ["Fa", "React"],
-        "TypeScript": ["Si", "Typescript"],
-        "Git": ["Fa", "GitAlt"],
-        "GitHub": ["Fa", "Github"],
-        "Java": ["Fa", "Java"],
-        "C / C++": ["Fa", "Copyright"],
-        "Python": ["Fa", "Python"],
-        "VisualStudio": ["Bi", "LogoVisualStudio"],
-        "SQL": ["Fa", "Database"],
-        "Vite": ["Si", "Vite"]
-      }
-  ]
 }
 

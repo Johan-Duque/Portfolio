@@ -6,6 +6,7 @@ import { Technologies } from "../Technologies";
 import { Sections } from "../Sections";
 import { Menu } from "../Menu";
 import { Context } from "../Context/Context";
+import { Certifications } from "../Certifications";
 
 function App() {
     return (
@@ -23,6 +24,9 @@ function App() {
                 </Sections>
                 <Sections id="4">
                     <Technologies />
+                </Sections>
+                <Sections id="5">
+                    <Certifications/>
                 </Sections>
             </Context>
         </>

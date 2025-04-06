@@ -18,7 +18,10 @@ function Home() {
 
     // JSON //
     const { Data_JSON, language, sectionId } = React.useContext( CreateContext ); 
-    const Home_Info = Data_JSON.Home;
+    const Home_Info = Data_JSON.Home[0];
+    const Home_Global = Data_JSON.Home[1];
+
+    console.log(Home_Global.img)
 
     const [typed_string, setTyped_string] = useState({
         content: Home_Info[0].Card[1].Types,
@@ -61,10 +64,10 @@ function Home() {
       }, [typed_string, language]);
 
     const data = {
-        Img_Back: Home_Info[0].Card[0].Img,
+        Img_Back: Home_Global.img,
         About_Me: Home_Info[0].Card[0].Title,
         Content_Back: Home_Info[0].Card[0].Content,
-        Urls_Back: Home_Info[0].Card[0].Urls,
+        Urls_Back: Home_Global.urls_aboutMe,
         Content_Front: Home_Info[0].Card[1].Content,
     }
     
@@ -78,7 +81,7 @@ function Home() {
                     </div>
                     <div className={styles.Container_Presentation__Info_AboutMe}>
                         <h2>{data.About_Me}<FaUserCircle /></h2>
-                        <p>{data.Content_Back[0]} <b><em><a href={data.Img_Back[0]} target="blank">{data.Content_Back[1]}</a></em></b>{data.Content_Back[2]} <b><em><a href={data.Urls_Back[1]} target="blank">{data.Content_Back[3]}</a></em></b> {Home_Info[0].Card[0].Content[4]}</p>
+                        <p>{data.Content_Back[0]} <b><em><a href={data.Urls_Back[0]} target="blank">{data.Content_Back[1]}</a></em></b>{data.Content_Back[2]} <b><em><a href={data.Urls_Back[1]} target="blank">{data.Content_Back[3]}</a></em></b> {Home_Info[0].Card[0].Content[4]}</p>
                     </div>
                 </div>
 
@@ -89,10 +92,10 @@ function Home() {
                     </p>
                     <div className={styles.Container_Presentation_Decoration}></div>
                     <div className={styles.Container_Presentation_Buttons}>
-                        <button><a href={Home_Info[0].Card[1].Urls[0]} target="blank">Email<MdEmail /></a></button>
-                        <button><a href={Home_Info[0].Card[1].Urls[1]} target="blank">Linkedin <FaLinkedin /></a></button>
-                        <button><a href={Home_Info[0].Card[1].Urls[2]} target="blank">GitHub <FaGithub /></a></button>
-                        <button><a href={Home_Info[0].Card[1].Urls[3]} target="blank">CV <SiReaddotcv /></a></button>
+                        <button><a href={Home_Global.urls_presentation[0]} target="blank">Email<MdEmail /></a></button>
+                        <button><a href={Home_Global.urls_presentation[1]} target="blank">Linkedin <FaLinkedin /></a></button>
+                        <button><a href={Home_Global.urls_presentation[2]} target="blank">GitHub <FaGithub /></a></button>
+                        <button><a href={Home_Global.urls_presentation[3]} target="blank">CV <SiReaddotcv /></a></button>
                     </div>
                 </div>
             </div>

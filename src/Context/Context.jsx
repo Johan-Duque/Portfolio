@@ -5,11 +5,12 @@ import json_information from "./information.json";
 import * as FaIcons from 'react-icons/fa';
 import * as SiIcons from 'react-icons/si';
 import * as BiIcons from 'react-icons/bi';
+import * as TbIcons from 'react-icons/tb';
 
 function Context ({ children }) {
 
     // Icons //
-    const Technologie_List =  json_information.Technologie_List[0];
+    const Technologie_List =  json_information.Global.Technologie_List[0];
     
     const CreateIcons = (name, index) => {
         if (Technologie_List.hasOwnProperty(name)) { // Check if the name exists as a key.
@@ -25,6 +26,9 @@ function Context ({ children }) {
                     break;
                 case 'Bi':
                     IconComponent = BiIcons[`Bi${iconName}`];
+                    break;
+                case 'Tb':
+                    IconComponent = TbIcons[`Tb${iconName}`];
                     break;
                 default:
                     return null; // Return null if prefix is not recognized.
@@ -95,18 +99,20 @@ function Context ({ children }) {
 
       const Data_JSON = language === 'Spanish' ? 
         {
-          "Home" : json_information.Spanish.Home,
+          "Home" : [json_information.Spanish.Home, json_information.Global.Home],
           "Experience" : json_information.Spanish.Experience,
-          "Projects": json_information.Spanish.Projects,
-          "Languages": json_information.Spanish.Languages, 
-          "Tools": json_information.Spanish.Tools
+          "Projects": [json_information.Spanish.Projects, json_information.Global.Projects],
+          "Languages": [json_information.Spanish.Languages, json_information.Global.Languages], 
+          "Tools": [json_information.Spanish.Tools, json_information.Global.Tools],
+          "Certifications" : json_information.Global.Certifications
         } :
         {
-          "Home" : json_information.English.Home,
+          "Home" : [json_information.English.Home, json_information.Global.Home],
           "Experience" : json_information.English.Experience,
-          "Projects": json_information.English.Projects,
-          "Languages": json_information.English.Languages, 
-          "Tools": json_information.English.Tools
+          "Projects": [json_information.English.Projects, json_information.Global.Projects],
+          "Languages": [json_information.English.Languages, json_information.Global.Languages], 
+          "Tools": [json_information.English.Tools, json_information.Global.Tools],
+          "Certifications" : json_information.Global.Certifications
         };  
 
       // Intersaction // 
@@ -115,21 +121,7 @@ function Context ({ children }) {
 
        const toggleSectionId = (id) => {
         setSectionId(id);
-      };
-
-      // url json // 
-
-      useEffect(() => {
-        fetch('https://drive.google.com/uc?export=download&id=1cm-K6rg4RUaVqjc8DTIoUwZxcYsuN5h6')
-        .then(response => response.json())
-        .then(data => {
-          // Aquí puedes trabajar con los datos JSON
-          console.log(data);
-        })
-        .catch(error => {
-          console.error('Error al obtener el archivo JSON:', error);
-        });
-      }, [theme]);      
+      };     
           
     return (
         <CreateContext.Provider value={{ 

@@ -1,27 +1,26 @@
-import React, { useRef, useEffect, useState} from "react"; // Importa useRef y useEffect
+import React, { useRef, useEffect, useState, useContext} from "react"; 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Div_Sections } from '../Sections/Divs_Sections';
+import { CreateContext } from '../Context/CreateContext';
 import styles from './Home.module.css';
-import { CreateContext } from '../Context/CreateContext'
 
 // Icons //
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { SiReaddotcv } from "react-icons/si";
-import { MdEmail } from "react-icons/md";
+import { FaFileDownload } from "react-icons/fa";
+import { MdAttachEmail } from "react-icons/md";
 import { FaUserCircle } from "react-icons/fa";
+import { FaAngleDoubleRight } from "react-icons/fa";
 
 // Presentation //
 import Typed from 'typed.js';
-import { FaAngleDoubleRight } from "react-icons/fa";
 
 function Home() {
 
     // JSON //
-    const { Data_JSON, language, sectionId } = React.useContext( CreateContext ); 
+    const { Data_JSON, language, sectionId } = useContext( CreateContext ); 
     const Home_Info = Data_JSON.Home[0];
     const Home_Global = Data_JSON.Home[1];
-
-    console.log(Home_Global.img)
 
     const [typed_string, setTyped_string] = useState({
         content: Home_Info[0].Card[1].Types,
@@ -76,7 +75,7 @@ function Home() {
             <div className={styles.Container_Presentation}>
                 <div className={styles.Container_Presentation__Info}>
                     <div className={styles.Container_Presentation__Info_img}>
-                        <img src={data.Img_Back} alt="Foto-Presentacion" />
+                        <LazyLoadImage src={data.Img_Back} alt="Photo"/>
                         <span>{data.About_Me}<FaAngleDoubleRight/></span>
                     </div>
                     <div className={styles.Container_Presentation__Info_AboutMe}>
@@ -92,10 +91,12 @@ function Home() {
                     </p>
                     <div className={styles.Container_Presentation_Decoration}></div>
                     <div className={styles.Container_Presentation_Buttons}>
-                        <button><a href={Home_Global.urls_presentation[0]} target="blank">Email<MdEmail /></a></button>
-                        <button><a href={Home_Global.urls_presentation[1]} target="blank">Linkedin <FaLinkedin /></a></button>
-                        <button><a href={Home_Global.urls_presentation[2]} target="blank">GitHub <FaGithub /></a></button>
-                        <button><a href={Home_Global.urls_presentation[3]} target="blank">CV <SiReaddotcv /></a></button>
+                        <button onClick={() => {window.open(Home_Global.urls_presentation[0], '_blank')}}>
+                          {language == 'Spanish' ? 'Descargar': 'Download'} CV <FaFileDownload />
+                        </button>
+                          <a href={Home_Global.urls_presentation[1]} target="blank"><FaLinkedin /></a>
+                          <a href={Home_Global.urls_presentation[2]} target="blank"><FaGithub /></a>
+                          <a href={Home_Global.urls_presentation[3]} target="blank"><MdAttachEmail /></a>
                     </div>
                 </div>
             </div>

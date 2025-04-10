@@ -4,7 +4,7 @@
       "Home" : {
         "img": "https://i.ibb.co/SwK9nx32/Foto-portfolio-1.webp",
         "urls_aboutMe": ["https://www.instagram.com/unet_oficial/?hl=es", "https://www.instagram.com/platzi/?hl=es-la"],
-        "urls_presentation" : ["mailto:jhoandp1995@gmail.com", "https://www.linkedin.com/in/johan-omar-duque-pereira-05160733a/", "https://github.com/Johan-Duque", "https://docs.google.com/document/d/17u_4RzUgfRf-UocXM7h4UoN2zKnYDcHQ/edit?usp=sharing&ouid=111385114366457343190&rtpof=true&sd=true"]
+        "urls_presentation" : ["https://docs.google.com/document/d/17u_4RzUgfRf-UocXM7h4UoN2zKnYDcHQ/edit?usp=sharing&ouid=111385114366457343190&rtpof=true&sd=true", "https://www.linkedin.com/in/johan-omar-duque-pereira-05160733a/", "https://github.com/Johan-Duque", "mailto:jhoandp1995@gmail.com"]
       },
       "Projects": [
       {
@@ -13,14 +13,6 @@
         "Technologies": ["C / C++", "Git", "GitHub"]
       }, {
         "urls": ["https://johan-duque.github.io/web-quimica/", "https://github.com/Johan-Duque/web-quimica.git"],
-        "img": "https://i.ibb.co/39BLWQ9Y/Energia-y-Fotones.png",
-        "Technologies": ["HTML", "CSS", "JavaScript", "React","Git", "GitHub", "Vite"]
-      }, {
-        "urls": ["https://johan-duque.github.io/web-quimica/", "https://github.com/Johan-Duque/Portfolio.git"],
-        "img": "https://i.ibb.co/39BLWQ9Y/Energia-y-Fotones.png",
-        "Technologies": ["HTML", "CSS", "JavaScript", "React","Git", "GitHub", "Vite"]
-      }, {
-        "urls": ["https://johan-duque.github.io/web-quimica/", "https://github.com/Johan-Duque/Portfolio.git"],
         "img": "https://i.ibb.co/39BLWQ9Y/Energia-y-Fotones.png",
         "Technologies": ["HTML", "CSS", "JavaScript", "React","Git", "GitHub", "Vite"]
       }
@@ -100,53 +92,46 @@
       ], 
       "Certifications" : [
         {
-          "icon": "JavaScript",
-          "background_color": "#fbff00",
-          "color": "#000",
-          "img": "https://i.ibb.co/Y7mXbVNM/diploma-document-object-model-page-0001.jpg"
+          "name": "JavaScript DOM",
+          "img": "https://i.ibb.co/Y7mXbVNM/diploma-document-object-model-page-0001.jpg",
+          "url" : "https://drive.google.com/file/d/1CUIzTRyPYqILETbF4J1CqEkzvenwDBpc/view?usp=sharing"
         },
         {
-          "img": "https://i.ibb.co/wh9VbqB3/diploma-javascript-page-0001.jpg"
+          "name": "Fundamentos JavaScript",
+          "img": "https://i.ibb.co/wh9VbqB3/diploma-javascript-page-0001.jpg",
+          "url" : "https://drive.google.com/file/d/1klL4_dY--CeAsX2j67MhmxS4R4VZY-f-/view?usp=sharing"
         },
         {
-          "img" : "https://i.ibb.co/fYBBMWtV/diploma-patrones-diseno-creacionales-page-0001.jpg"
+          "name": "JavaScript Patrones De Diseño",
+          "img" : "https://i.ibb.co/fYBBMWtV/diploma-patrones-diseno-creacionales-page-0001.jpg",
+          "url" : "https://drive.google.com/file/d/1ChERtdmWg6raXqH5X-IekiZgoInUksgB/view?usp=sharing"
         },
         {
-          "icon": "React",
-          "background_color": "#00eaff",
-          "color": "#000",
-          "img": "https://i.ibb.co/PvgzNsF7/diploma-react-page-0001.jpg"
+          "name": "React",
+          "img": "https://i.ibb.co/PvgzNsF7/diploma-react-page-0001.jpg",
+          "url" : "https://drive.google.com/file/d/1w5-6oCTBVBC1Ab978G5wir_ojRNJ2MsF/view?usp=sharing"
         },
         {
-          "icon": "HTML",
-          "background_color": "#ff5e00",
-          "color": "#fff",
-          "img": "https://i.ibb.co/6Rg6Lb9Y/img.jpg"
+          "name": "HTML / CSS",
+          "img": "https://i.ibb.co/6Rg6Lb9Y/img.jpg",
+          "url" : "https://drive.google.com/file/d/1NLBCD85iVefKV5eQWHB1-lliQJLUWaHT/view?usp=sharing"
         },
         {
-          "icon": "CSS",
-          "background_color": "#1875f8",
-          "color": "#fff"
-        },
-        {
-          "icon": "TypeScript",
-          "background_color": "#1156b7",
-          "color": "#fff",
-          "img": "https://i.ibb.co/spvStFnz/diploma-typescript-22-page-0001.jpg"
+          "name": "TypeScript",
+          "img": "https://i.ibb.co/spvStFnz/diploma-typescript-22-page-0001.jpg",
+          "url" : "https://drive.google.com/file/d/1xYfwNLPV5qX5RZBxDJJmZClnkN0CpiZA/view?usp=sharing"
         }, {
-          "icon": "Git",
-          "background_color": "#d41313",
-          "color": "#fff"
-        }, {
-          "icon": "GitHub",
-          "background_color": "#000",
-          "color": "#fff",
-          "img": "https://i.ibb.co/67KPC91p/diploma-gitgithub-page-0001.jpg"
+          "name": "Git / GitHub",
+          "img": "https://i.ibb.co/67KPC91p/diploma-gitgithub-page-0001.jpg",
+          "url" : "https://drive.google.com/file/d/1VnE05y6L_HaUfV99jo0aA5sIgdIE23pb/view?usp=sharing"
         } , {
-          "icon": "Ux",
-          "background_color": "#000",
-          "color": "#fff",
-          "img": "https://i.ibb.co/MxsKgQRP/diploma-diseno-programadores-page-0001.jpg"
+          "name": "Ux",
+          "img": "https://i.ibb.co/MxsKgQRP/diploma-diseno-programadores-page-0001.jpg",
+          "url" : "https://drive.google.com/file/d/132tzRVnlbYVPGcNwEzf6CzEojv5zwvDf/view?usp=sharing"
+        }, {
+          "name": "Ingles",
+          "img": "https://i.ibb.co/4RGgNdRr/diploma-ingles-a1-principiantes-page-0001.jpg",
+          "url" : "https://drive.google.com/file/d/1rsr7CggS8qXGCaMxyl5OZ9yXNnCHbIMN/view?usp=sharing"
         }
 
       ]
@@ -209,12 +194,6 @@
           {
             "name": "Laboratorio Clinico",
             "description": "Desarrollo de un software de un Laboratorio Clínico como proyecto final, fue un trabajo grupal con otros 2 compañeros donde debíamos usar únicamente Lenguaje C. Usamos otras tecnologías como Git y GitHub para facilitar el desarrollo"
-          }, {
-            "name": "Informe de Fotones",
-            "description": "Trabajo de química, relacionado con la energía cuántica y los fotones. además, de ver la historia de científicos como Max Plank y Albert Einstein"
-          }, {
-            "name": "Informe de Fotones",
-            "description": "Trabajo de química, relacionado con la energía cuántica y los fotones. además, de ver la historia de científicos como Max Plank y Albert Einstein"
           }, {
             "name": "Informe de Fotones",
             "description": "Trabajo de química, relacionado con la energía cuántica y los fotones. además, de ver la historia de científicos como Max Plank y Albert Einstein"
@@ -312,12 +291,6 @@
             "description": "Development of a Clinical Laboratory software as a final project. It was a group work with 2 other classmates where we had to use only C Language. We used other technologies like Git and GitHub to facilitate development."
           },
           {
-            "name": "Photons Report",
-            "description": "Chemistry work, related to quantum energy and photons. Furthermore, we explored the history of scientists like Max Plank and Albert Einstein."
-          }, {
-            "name": "Photons Report",
-            "description": "Chemistry work, related to quantum energy and photons. Furthermore, we explored the history of scientists like Max Plank and Albert Einstein."
-          },           {
             "name": "Photons Report",
             "description": "Chemistry work, related to quantum energy and photons. Furthermore, we explored the history of scientists like Max Plank and Albert Einstein."
           }

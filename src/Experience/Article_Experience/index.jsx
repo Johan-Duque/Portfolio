@@ -1,6 +1,6 @@
-import styles from './Experience_Article.module.css'
+import styles from './Article_Experience.module.css'
 
-function Experience_Article ({Title, Content}) {
+function Article_Experience ({Title, Content}) {
     return (
         <div class={styles.timeline_content}>
             <div class={styles.content}>
@@ -11,5 +11,5 @@ function Experience_Article ({Title, Content}) {
     )
 }
 
-export { Experience_Article }
+export { Article_Experience }
  

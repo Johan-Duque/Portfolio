@@ -4,3 +4,9 @@
     max-width: 1030px;
     padding: 10px;
 }
+
+@media (max-width: 400px) {  
+    .Div_Sections {
+        width: 90%;
+    }
+}

@@ -1,8 +1,6 @@
-import React from "react";
-import styles from './Technologi.module.css'
-
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { CreateContext } from "../../Context/CreateContext";
+import styles from './Technologi.module.css'
 
 function Technologi ({ name, background_color, width, color_i, description}) {
     const { CreateIcons } = useContext(CreateContext);

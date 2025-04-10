@@ -5,8 +5,9 @@ import { CreateContext } from '../Context/CreateContext';
 
 function Sections ({id, children}) {
 
-    const {toggleSectionId} = useContext(CreateContext);
+    const {toggleSectionId, sectionId} = useContext(CreateContext);
     const sectionRef = useRef(null); 
+    const rootMarginValue = sectionId < 4 ? '-50% 100px -50% 100px' : '-70% 100px -30% 100px'; // Ejemplo de otro valor
 
     useEffect(() => {
       const observer = new IntersectionObserver(
@@ -18,7 +19,7 @@ function Sections ({id, children}) {
           });
         },
         {
-          rootMargin: '-50% 100px -50% 100px',
+          rootMargin: rootMarginValue,
         }
       );
   

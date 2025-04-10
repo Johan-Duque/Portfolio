@@ -1,4 +1,4 @@
-.test_pc {
+.Container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -16,7 +16,7 @@
     color: var(--color-6);
 }
 
-.test_p {
+.Article__Container {
     display: block;
     width: 50%;
 }
@@ -33,7 +33,7 @@
 }
 
 @media (max-width: 1064px) {
-    .test_p {
+    .Article__Container {
         display: none;
         width: 0;
     }

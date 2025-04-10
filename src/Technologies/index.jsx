@@ -39,4 +39,4 @@ function Technologies () {
     )
 }
 
-export { Technologies }
+export default Technologies;

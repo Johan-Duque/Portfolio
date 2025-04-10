@@ -5,7 +5,6 @@ import json_information from "./information.json";
 import * as FaIcons from 'react-icons/fa';
 import * as SiIcons from 'react-icons/si';
 import * as BiIcons from 'react-icons/bi';
-import * as TbIcons from 'react-icons/tb';
 
 function Context ({ children }) {
 
@@ -26,9 +25,6 @@ function Context ({ children }) {
                     break;
                 case 'Bi':
                     IconComponent = BiIcons[`Bi${iconName}`];
-                    break;
-                case 'Tb':
-                    IconComponent = TbIcons[`Tb${iconName}`];
                     break;
                 default:
                     return null; // Return null if prefix is not recognized.
@@ -87,7 +83,7 @@ function Context ({ children }) {
         }
       }, [theme]);
 
-    // Toggle Language //
+      // Toggle Language //
     
     const [language, setlanguage] = useLocalStorage('Language', 'Spanish');
     

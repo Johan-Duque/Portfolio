@@ -39,7 +39,7 @@
     height: 100%;
     font-size: 10px;
     display: flex;
-    opacity: 0; /* Inicialmente oculto */
+    opacity: 0; 
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Añadimos la transición */
 }
@@ -53,11 +53,11 @@
 /* --- Hover --- */
 
 .Technologi__Container:hover .Technologi__Container_Front {
-    opacity: 0; /* Desvanecer al hacer hover */
+    opacity: 0; 
 }
 
 .Technologi__Container:hover .Technologi__Container_Back {
-    opacity: 1; /* Mostrar al hacer hover */
+    opacity: 1; 
     visibility: visible;
     transition: opacity 0.3s ease, visibility 0s linear 0s; /* Cambiamos el delay de visibilidad a 0s*/
 }

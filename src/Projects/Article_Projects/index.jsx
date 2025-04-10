@@ -1,14 +1,16 @@
-import styles from './Articles.module.css'
-import React from 'react';
+import styles from './Article_Projects.module.css'
+import React, {useState} from 'react';
 import { useContext } from 'react';
 import { CreateContext } from '../../Context/CreateContext'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 // Icons //
 import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
 
-function Article ({Title, Description, Img, Technologies, urls}) {
+function Article_Projects ({Title, Description, Img, Technologies, urls}) {
 
+    const [disabled, setDisabled] = useState(true);
     let array = [], counter = 0;
     const { CreateIcons } = useContext(CreateContext);
 
@@ -17,11 +19,17 @@ function Article ({Title, Description, Img, Technologies, urls}) {
         counter++;
     }
 
+    const toggleDisabled = () => {
+        setTimeout(() => {
+            setDisabled(!disabled);
+        }, 700);
+    }
+
     return(
-        <article className={styles.Container__Projects}>
+        <article className={styles.Container__Projects} onMouseOver={toggleDisabled}>
             <div className={styles.Container__Projects_InfoProject}>
                 <div className={styles.Container__Projects_divImg}>
-                    <img src={Img} alt="" />
+                    <LazyLoadImage src={Img}/>
                 </div>
                 <div className={styles.Container__Projects_divContent}>
                  <h3>{Title}</h3>
@@ -31,11 +39,11 @@ function Article ({Title, Description, Img, Technologies, urls}) {
                 </div>
             </div>
             <div className={styles.Container__Projects_LinksProject}>
-                    <a href={urls[0]} target='blank'><FaLink/></a>
-                    <a href={urls[1]} target='blank'><FaGithub/></a>
+                    <button disabled={disabled} onClick={() => window.open(urls[0], '_blank')}><FaLink/></button>
+                    <button disabled={disabled} onClick={() => window.open(urls[1], '_blank')}><FaGithub/></button>
             </div>
         </article>
     )
 }
 
-export { Article }
+export { Article_Projects }

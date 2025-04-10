@@ -4,21 +4,176 @@ header {
 
 .Menu {
     width: 100%;
-    height: 30px;
+    height: 50px;
     position: fixed;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    margin-top: 20px;
     z-index: 1;
 }
 
 .Menu .Menu__div {
-    border: 1px solid var(--color-4);
-    border-radius: 20px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    background-color: var(--color-0);
+    border-bottom: 1px solid var(--color-4);
+}
+
+.Menu__div .Menu__Hamburger {
+    display: none;
+}
+
+.Menu__div .Menu__div_Sections{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    gap: 5px;
+}
+
+.Menu__div .Menu__div_Sections a{
+    text-decoration: none;
+}
+
+.Menu__div .Menu__div_Sections a {
+    text-decoration: none;
+    margin: 5px;
+    transition: color var(--transition-duration-1);
+}
+
+.Menu__div .Menu__div_Sections a:hover {
+    color: var(--color-4) !important;
+}
+
+.Menu__div_Sections .button__closeMenu{
+    display: none;
+}
+
+/* --- Buttons Language / Theme --- */
+
+.Menu__div .Menu__div_Buttons {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.Menu__div .Menu__div_Buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 100%;
+    background: transparent;
+    border: none;
+}
+
+.Menu .Menu__Button_Language img{
+    width: 80%;
+    height: 26px;
+    object-fit: cover;
+}
+
+.Menu .Menu__Button_Language img:hover{
+    cursor: pointer;
+}
+
+.Menu .Menu__Button_Theme svg{
+    color: var(--color-4);
+    font-size: 25px;
+    transition: color var(--transition-duration-1);
+}
+
+.Menu .Menu__Button_Theme svg:hover{
+    cursor: pointer;
+}
+
+.DarkMode_Icon:hover{
+    color: rgb(107, 107, 107) !important;
+}
+
+.LightMode_Icon:hover{
+    color: rgb(210, 193, 0) !important;
+}
+
+
+/* CSS RESPONSIVE */
+
+@media (max-width: 550px) {
+
+    .Menu .Menu__div {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .Menu__div .Menu__Hamburger {
+        display: flex;
+        font-size: 30px;
+        color: var(--color-4);
+    }
+
+    .div_Sections_Links {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--color-0);
+        width: 100vw !important;
+        height: 100vh !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .3s ease all;
+    }
+
+    .div_Sections_Links a {
+        font-size: 25px;
+        margin: 12px auto;
+    }
+
+    .Menu__div .button__closeMenu {
+        display: flex;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 50px;
+        color: var(--color-4);
+        background: none;
+        border: none;
+    }
+
+}
+
+/*
+
+header {
+    width: 100%;
+}
+
+.Menu {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 1;
+}
+
+.Menu .Menu__div_Responsive {
+    display: none;
+}
+
+.Menu .Menu__div {
+    width: 100%;
+    border-bottom: 1px solid var(--color-4);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     background-color: var(--color-0);
 }
@@ -69,31 +224,70 @@ header {
     color: var(--color-2);
 }
 
-/* CSS RESPONSIVE */
-
-@media (max-width: 450px) {
-    .Menu {
-        margin-top: 0px;
+@media (max-width: 550px) {
+    .Menu .Menu__div {
+        display: none;
     }
-    .Menu .Menu__div{
+    .Menu .Menu__div_Responsive {
         width: 100%;
-        border-radius: 0px;
-        border: 0px;
+        height: 50px;
         border-bottom: 2px solid var(--color-4);
-        justify-content: center;
-        font-size: 14px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 20px;
+        background-color: var(--color-0);
     }
-}
 
-@media (max-width: 360px) {
-    .Menu .Menu__Button_Language{
-        width: 35px;
-   }
- 
-    .Menu a {
-        text-decoration: none;
-        margin: 3px;
-        transition: color var(--transition-duration-1);
-        font-size: 13px
+    .Menu__div_Responsive .div_Responsive__Buttons{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Menu__div_Responsive .div_Responsive__Buttons img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .Menu__div_Responsive .div_Responsive__Buttons button svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .Menu__div_Responsive .div_Responsive__Hamburger {
+        display: flex;
+        align-items: center;
+        color: var(--color-4);
+        font-size: 45px;
+    }
+
+    .div_Responsive__Hamburger .Responsive__Hamburger_View {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--color-0);
+        width: 100vw !important;
+        height: 100vh !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .3s ease all;
+    }
+
+    .div_Responsive__Hamburger .Responsive__Hamburger_View a {
+        font-size: 25px;
+        margin: 12px auto;
+    }
+
+    .div_Responsive__Hamburger .Responsive__Hamburger_View button{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 50px;
+        color: var(--color-4);
+        z-index: 10000 !important;
     }
 }
+ 
+*/

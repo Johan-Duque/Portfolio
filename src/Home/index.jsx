@@ -91,7 +91,9 @@ function Home() {
                     </p>
                     <div className={styles.Container_Presentation_Decoration}></div>
                     <div className={styles.Container_Presentation_Buttons}>
-                        <button onClick={() => {window.open(Home_Global.urls_presentation[0], '_blank')}}>
+                        <button onClick={() => {
+                          language == 'Spanish' ? window.open(Home_Global.urls_presentation[0][0], '_blank') : window.open(Home_Global.urls_presentation[0][1], '_blank')
+                        }}>
                           {language == 'Spanish' ? 'Descargar': 'Download'} CV <FaFileDownload />
                         </button>
                           <a href={Home_Global.urls_presentation[1]} target="blank"><FaLinkedin /></a>

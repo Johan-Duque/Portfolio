@@ -4,11 +4,11 @@
       "Home" : {
         "img": "https://i.ibb.co/SwK9nx32/Foto-portfolio-1.webp",
         "urls_aboutMe": ["https://www.instagram.com/unet_oficial/?hl=es", "https://www.instagram.com/platzi/?hl=es-la"],
-        "urls_presentation" : ["https://docs.google.com/document/d/17u_4RzUgfRf-UocXM7h4UoN2zKnYDcHQ/edit?usp=sharing&ouid=111385114366457343190&rtpof=true&sd=true", "https://www.linkedin.com/in/johan-omar-duque-pereira-05160733a/", "https://github.com/Johan-Duque", "mailto:jhoandp1995@gmail.com"]
+        "urls_presentation" : [["https://docs.google.com/document/d/17u_4RzUgfRf-UocXM7h4UoN2zKnYDcHQ/edit?usp=sharing&ouid=111385114366457343190&rtpof=true&sd=true", "https://docs.google.com/document/d/14fZXEZoCCXrdMKUc7acDuAE51R37ATjG/edit?usp=sharing&ouid=111385114366457343190&rtpof=true&sd=true"], "https://www.linkedin.com/in/johan-omar-duque-pereira-05160733a/", "https://github.com/Johan-Duque", "mailto:jhoandp1995@gmail.com"]
       },
       "Projects": [
       {
-        "urls": ["https://johan-duque.github.io/web-quimica/", "https://github.com/Johan-Duque/Portfolio.git"],
+        "urls": ["https://drive.google.com/file/d/14hYHlk7XCVjCkj0zKhsM1tqYquvABWjS/view?usp=sharing", "https://github.com/Johan-Duque/Clinical-Laboratory"],
         "img": "https://i.ibb.co/M0nygzw/Laboratorio-Clinico.png",
         "Technologies": ["C / C++", "Git", "GitHub"]
       }, {

@@ -2,7 +2,7 @@
 
     "Global" : {
       "Home" : {
-        "img": "https://i.ibb.co/SwK9nx32/Foto-portfolio-1.webp",
+        "img": "https://i.ibb.co/Nds4gR7s/IMG-20250416-WA0004-1.jpg",
         "urls_aboutMe": ["https://www.instagram.com/unet_oficial/?hl=es", "https://www.instagram.com/platzi/?hl=es-la"],
         "urls_presentation" : [["https://docs.google.com/document/d/17u_4RzUgfRf-UocXM7h4UoN2zKnYDcHQ/edit?usp=sharing&ouid=111385114366457343190&rtpof=true&sd=true", "https://docs.google.com/document/d/14fZXEZoCCXrdMKUc7acDuAE51R37ATjG/edit?usp=sharing&ouid=111385114366457343190&rtpof=true&sd=true"], "https://www.linkedin.com/in/johan-omar-duque-pereira-05160733a/", "https://github.com/Johan-Duque", "mailto:jhoandp1995@gmail.com"]
       },
@@ -142,11 +142,11 @@
           { "Card": [
               {
                   "Title": "Sobre mí",
-                  "Content": ["Me llamo Johan Omar Duque Pereira. Actualmente realizo proyectos de manera autodidacta. Además, sigo estudiando la carrera de Ingeniería Informática en mi","universidad",". Aunque también sigo aprendiendo mediante cursos en la academia de","Platzi","donde he aprendido tecnologías como TypeScript o React."]
+                  "Content": ["Soy estudiante de Ingeniería Informática. Actualmente realizo proyectos de manera autodidacta. Además, sigo estudiando la carrera de Ingeniería en mi","universidad",". Aunque también sigo aprendiendo mediante cursos en la academia de","Platzi","donde he aprendido tecnologías como TypeScript o React."]
               },
               {
                   "Types": ["Desarrollador Front-End", "Ingeniero Informático", "Programador"],
-                  "Content": ["Soy estudiante de Ingeniería Informática, se usar tecnologías relacionadas con el Front-End como", "Java Script, HTML, CSS, React y TypeScript.", "Además, también se usar lenguajes mas orientados al Backend como", "Python, Java, C y C++."]
+                  "Content": ["Me llamo Johan Omar Duque Pereira, se usar tecnologías relacionadas con el Front-End como", "Java Script, HTML, CSS, React y TypeScript.", "Además, también se usar lenguajes mas orientados al Backend como", "Python, Java, C y C++."]
               }
             ]
           }
@@ -155,35 +155,35 @@
         "Experience": [
           { "Programming_Experience": [
               {
-                  "Title": "Laboratorio Clínico",
-                  "Content": "Desarrollo de un Laboratorio Clínico como proyecto final de programación, fue un trabajo junto a otros 2 compañeros donde debíamos usar solo Lenguaje C. Además, usamos Git y GitHub como herramientas"
+                  "Title": "Software de un Laboratorio Clínico",
+                  "Content": "Lideré el co-desarrollo de un software de gestión para un Laboratorio Clínico como proyecto final de programación. Implementé Lenguaje C para el desarrollo principal"
     
               },
               {
-                  "Title": "Informe sobre Fotones y Energia cuantica",
-                  "Content": "Trabajo de química, relacionado con la energía cuántica y los fotones. además, de ver la historia de científicos como Max Plank y Albert Einstein."
+                  "Title": "Investigación de Química Cuántica",
+                  "Content": "Realicé una investigación sobre energía cuántica y el comportamiento de fotones. Desarrollé un informe interactivo con React para visualizar los hallazgos y lo publiqué exitosamente en GitHub Pages."
     
               },
               {
-                  "Title": "Creación de Web con WordPress",
-                  "Content": "Cree una página web con WordPress, era una tienda de venta de productos con estampados florales, dicha tienda generaba ingresos con la afiliación de Amazon"
+                  "Title": "Creación y Monetización con WordPress",
+                  "Content": "Diseñe y desarrollé una tienda online en WordPress especializada en productos con estampados florales. Esta plataforma generó ingresos a través de un modelo de negocio de afiliación con Amazon"
     
               }
             ]
           }, { "Work_Experience": [
               {
-                  "Title": "Sellador de Bolsas",
-                  "Content": "Trabajé para la empresa de mi padre como sellador de bolsas plásticas en una empresa dedicada a la producción de materiales plásticos."
+                  "Title": "Asistencia en Producción:",
+                  "Content": "Trabajé como sellador de bolsas plásticas en Mavipa SA, empresa dedicada a la producción de materiales plásticos."
     
               },
               {
-                  "Title": "Dependiente",
-                  "Content": "Trabajé como dependiente de uno de los negocios de mi madre enfocado en la venta de dulces para postres, ayudando también en el apartado del inventario."
+                  "Title": "Gestión de Inventario y Ventas",
+                  "Content": "Trabajé como dependiente en Distribuciones San Antonio, negocio enfocado en la venta de dulces para postres, ayudando también en el apartado del inventario"
     
               },
               {
-                  "Title": "Personal de logística",
-                  "Content": "Me dedicaba a contar mercancía, ordenarla y empacarla para posteriormente distribuirla diferentes negocios, ya que la empresa era una distribuidora de materiales plásticos."
+                  "Title": "Personal de Logística",
+                  "Content": "Gestióne el inventario, incluyendo conteo, organización y empaque de mercancía para distribución a diversos negocios de materiales plásticos."
     
               }
             ]
@@ -192,11 +192,11 @@
     
         "Projects": [
           {
-            "name": "Laboratorio Clinico",
-            "description": "Desarrollo de un software de un Laboratorio Clínico como proyecto final, fue un trabajo grupal con otros 2 compañeros donde debíamos usar únicamente Lenguaje C. Usamos otras tecnologías como Git y GitHub para facilitar el desarrollo"
+            "name": "Software de un Laboratorio Clínico",
+            "description": "Lideré el co-desarrollo de un software de gestión para un Laboratorio Clínico como proyecto final de programación. Implementé Lenguaje C para el desarrollo principal y utilicé Git y GitHub para la colaboración y el control de versiones"
           }, {
-            "name": "Informe de Fotones",
-            "description": "Trabajo de química, relacionado con la energía cuántica y los fotones. además, de ver la historia de científicos como Max Plank y Albert Einstein"
+            "name": "Investigación de Química Cuántica",
+            "description": "Realicé una investigación sobre energía cuántica y el comportamiento de fotones. Desarrollé un informe interactivo con React para visualizar los hallazgos y lo publiqué exitosamente en GitHub Pages."
           }
         ],
     
@@ -231,110 +231,118 @@
         ]
       },
 
-    "English" : {
-
-        "Home": [
-          { "Card": [
-              {
-                  "Title": "About me",
-                  "Content": ["My name is Johan Omar Duque Pereira. I am currently working on self-taught projects. Additionally, I continue to study Computer Engineering at my","University",". while also learning through courses at the","Platzi","academy, where I have learned technologies like TypeScript or React."]
-              },
-              {
-                  "Types": ["Front-End Developer", "Software Engineer", "Programmer"],
-                  "Content": ["I am a Computer Engineering student, and I know how to use Front-End related technologies such as", "Java Script, HTML, CSS, React y TypeScript.", "Additionally, I also know how to use more Backend-oriented languages like", "Python, Java, and C."]
-              }
+"English": {
+    "Home": [
+      {
+        "Card": [
+          {
+            "Title": "About me",
+            "Content": [
+              "I am a Computer Engineering student. I currently work on self-taught projects. Additionally, I continue studying Engineering at my",
+              "university",
+              ". I also keep learning through courses at the",
+              "Platzi",
+              "academy, where I've learned technologies like TypeScript and React."
             ]
-          }
-        ],
-    
-        "Experience": [
-          { "Programming_Experience": [
-              {
-                  "Title": "Clinical Laboratory",
-                  "Content": "Development of a Clinical Laboratory as a final programming project. It was a collaborative work with 2 other classmates where we had to use only the C Language. Additionally, we used Git and GitHub as tools."
-    
-              },
-              {
-                  "Title": "Report on Photons and Quantum Energy",
-                  "Content": "Chemistry work, related to quantum energy and photons. Furthermore, we explored the history of scientists like Max Plank and Albert Einstein."
-    
-              },
-              {
-                  "Title": "WordPress Web Creation",
-                  "Content": "I created a website with WordPress, it was a store selling products with floral prints. This store generated income through Amazon affiliate marketing."
-    
-              }
+          },
+          {
+            "Types": [
+              "Front-End Developer",
+              "Computer Engineer",
+              "Programmer"
+            ],
+            "Content": [
+              "My name is Johan Omar Duque Pereira. I can use Front-End related technologies such as",
+              "JavaScript, HTML, CSS, React, and TypeScript.",
+              "Additionally, I also know how to use more Backend-oriented languages like",
+              "Python, Java, C, and C++."
             ]
-          }, { "Work_Experience": [
-              {
-                  "Title": "Bag Sealer",
-                  "Content": "I worked for my father's company as a plastic bag sealer in a company dedicated to the production of plastic materials."
-    
-              },
-              {
-                  "Title": "Sales Clerk",
-                  "Content": "I worked as a sales clerk in one of my mother's businesses focused on selling sweets for desserts, also helping with the inventory section."
-    
-              },
-              {
-                  "Title": "Logistics Staff",
-                  "Content": "I was dedicated to counting merchandise, organizing it, and packing it for subsequent distribution to different businesses, as the company was a distributor of plastic materials."
-    
-              }
-            ]
-          }
-        ],
-    
-        "Projects": [
-          {
-            "name": "Clinical Laboratory",
-            "description": "Development of a Clinical Laboratory software as a final project. It was a group work with 2 other classmates where we had to use only C Language. We used other technologies like Git and GitHub to facilitate development."
-          },
-          {
-            "name": "Photons Report",
-            "description": "Chemistry work, related to quantum energy and photons. Furthermore, we explored the history of scientists like Max Plank and Albert Einstein."
-          }
-        ],
-    
-        "Languages": [
-          {
-            "description": "I learned JavaScript self-taught. In addition, I took courses at the Platzi academy where I obtained certifications."
-          },
-          {
-            "description": "I initially learned React with Platzi where I got certified. Afterwards, I learned more on my own."
-          },
-          {
-            "description": "I initially learned HTML through YouTube, then improved with Platzi and by doing projects."
-          },
-          {
-            "description": "I initially learned CSS through YouTube, then improved with Platzi and by doing projects."
-          },
-          {
-            "description": "I learned TypeScript 100% thanks to Platzi where I got certified, currently I continue to learn more advanced things about this technology."
-          },
-          {
-            "description": "I learned Python self-taught, watching YouTube and doing Logic exercises, but I plan to specialize further to use Django and be more complete."
-          },
-          {
-            "description": "I learned Java on my own, and I also got certified at the polytechnic of Colombia, currently it is used in my university."
-          },
-          {
-            "description": "I learned C at the University, also by watching YouTube and doing final projects."
-          }
-        ],
-    
-        "Tools": [
-          { 
-            "description": "I learned Git initially through YouTube, although I later finished understanding version control better with Platzi, where I got certified."
-          },
-          {
-            "description": "I learned GitHub initially on my own, then with Platzi I studied the use of Dependabot, CodeSpaces, Tokens, SSH, etc. In addition to getting certified."
-          },
-          {
-            "description": "I learned to use Visual Studio Code on my own at first, then it became my main code editor for any project."
           }
         ]
       }
+    ],
+    "Experience": [
+      {
+        "Programming_Experience": [
+          {
+            "Title": "Clinical Laboratory Software",
+            "Content": "I led the co-development of a management software for a Clinical Laboratory as a final programming project. I implemented C Language for the main development."
+          },
+          {
+            "Title": "Quantum Chemistry Research",
+            "Content": "I conducted research on quantum energy and photon behavior. I developed an interactive report with React to visualize the findings and successfully published it on GitHub Pages."
+          },
+          {
+            "Title": "WordPress Creation and Monetization",
+            "Content": "I designed and developed an online store on WordPress specializing in floral print products. This platform generated income through an Amazon affiliate business model."
+          }
+        ]
+      },
+      {
+        "Work_Experience": [
+          {
+            "Title": "Production Assistant:",
+            "Content": "I worked as a plastic bag sealer at Mavipa SA, a company dedicated to the production of plastic materials."
+          },
+          {
+            "Title": "Inventory and Sales Management",
+            "Content": "I worked as a sales clerk at Distribuciones San Antonio, a business focused on selling sweets for desserts, also assisting with inventory."
+          },
+          {
+            "Title": "Logistics Personnel",
+            "Content": "Managed inventory, including counting, organizing, and packing merchandise for distribution to various plastic material businesses."
+          }
+        ]
+      }
+    ],
+    "Projects": [
+      {
+        "name": "Clinical Laboratory Software",
+        "description": "I led the co-development of a management software for a Clinical Laboratory as a final programming project. I implemented C Language for the main development and used Git and GitHub for collaboration and version control."
+      },
+      {
+        "name": "Quantum Chemistry Research",
+        "description": "I conducted research on quantum energy and photon behavior. I developed an interactive report with React to visualize the findings and successfully published it on GitHub Pages."
+      }
+    ],
+    "Languages": [
+      {
+        "description": "I learned JavaScript self-taught. Additionally, I took courses at the Platzi academy where I obtained certifications."
+      },
+      {
+        "description": "I initially learned React with Platzi where I got certified. Afterwards, I learned more on my own."
+      },
+      {
+        "description": "I initially learned HTML from YouTube, then improved with Platzi and by doing projects."
+      },
+      {
+        "description": "I initially learned CSS from YouTube, then improved with Platzi and by doing projects."
+      },
+      {
+        "description": "I learned TypeScript 100% thanks to Platzi where I got certified; I'm currently still learning more advanced things about this technology."
+      },
+      {
+        "description": "I learned Python self-taught, by watching YouTube and doing logic exercises, but I plan to specialize further in Django later to be more comprehensive."
+      },
+      {
+        "description": "I learned Java on my own, and I also got certified at the Polytechnic of Colombia; it's currently used at my university."
+      },
+      {
+        "description": "I learned C at university, also by watching YouTube and doing final projects."
+      }
+    ],
+    "Tools": [
+      {
+        "description": "I initially learned Git from YouTube, but then I fully understood version control better with Platzi, where I got certified."
+      },
+      {
+        "description": "I initially learned GitHub on my own, then with Platzi I studied the use of Dependabot, CodeSpaces, Tokens, SSH, etc., and also got certified."
+      },
+      {
+        "description": "I initially learned how to use Visual Studio Code on my own, then it became my primary code editor for any project."
+      }
+    ]
+  }
 
 }
 

@@ -214,13 +214,13 @@
         gap: 20px;
     }
     .Container_Presentation__Info {
-        margin-top: 10%;
+        margin-top: 12%;
     }
 }
 
 @media (max-width: 670px) {  
     .Container_Presentation__Info {
-        margin-top: 20%;
+        margin-top: 22.5%;
         width: 300px;
         height: 340px;
     }

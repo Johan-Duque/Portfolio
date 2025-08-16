@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, type ReactNode } from 'react';
+import React, { createContext, useState, type ReactNode } from 'react';
 
 interface LanguageContextType {
   language: 'en' | 'es';
@@ -6,7 +6,7 @@ interface LanguageContextType {
   t: (key: string) => string;
 }
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+export const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 // Traducciones
 const translations = {
@@ -26,13 +26,16 @@ const translations = {
     
     // About section
     'about.title': 'About Me',
-    'about.description': 'I am a passionate Fron-End Developer with experience in modern web technologies. I love learning new things and solving complex problems.',
+    'about.description': 'I am a passionate Fron-End Developer with experience in modern web technologies. I love learning new things and solving complex problems. I am a passionate Fron-End Developer with experience in modern web technologies.',
+    'about.frontEnd_years' : 'Years Experience Front-End Developer',
+    'about.computerEngineer_years' : 'Years Studying Computer Engineer',
+    'about.backend_years' : 'Years Experience Backend Developer',
     'about.skills': 'Skills',
     'about.education': 'Education',
     'about.interests': 'Interests',
     
     // Experience section
-    'experience.title': 'Work Experience',
+    'experience.title': 'Experience',
     'experience.current': 'Present',
     
     // Projects section
@@ -61,7 +64,7 @@ const translations = {
     
     // Home section
     'home.title': 'Hola, soy',
-    'home.subtitle': 'Desarrollador Full Stack',
+    'home.subtitle': 'Desarrollador Fron-End',
     'home.description': 'Apasionado por crear soluciones digitales innovadoras y convertir ideas en realidad a través del código.',
     'home.cta': 'Conoce más sobre mí',
     
@@ -106,13 +109,5 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
       {children}
     </LanguageContext.Provider>
   );
-};
-
-export const useLanguage = (): LanguageContextType => {
-  const context = useContext(LanguageContext);
-  if (context === undefined) {
-    throw new Error('useLanguage must be used within a LanguageProvider');
-  }
-  return context;
 };
 

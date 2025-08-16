@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLanguage } from '../../contexts/LanguageContext';
+import { useLanguage } from '../../Hooks';
 import styles from './Projects.module.css';
 
 interface Project {
@@ -12,7 +12,7 @@ interface Project {
   githubUrl?: string;
 }
 
-const Projects: React.FC = () => {
+const ProjectsComponent: React.FC = () => {
   const { t } = useLanguage();
 
   const projects: Project[] = [
@@ -40,15 +40,6 @@ const Projects: React.FC = () => {
       description: 'A modern, responsive portfolio website built with React and TypeScript, featuring smooth animations and dark mode.',
       image: '/project3.jpg',
       technologies: ['React', 'TypeScript', 'CSS Modules', 'Framer Motion', 'Vite'],
-      liveUrl: '#',
-      githubUrl: '#'
-    },
-    {
-      id: 4,
-      title: 'Weather Dashboard',
-      description: 'A weather application that displays current weather conditions and forecasts using external APIs.',
-      image: '/project4.jpg',
-      technologies: ['JavaScript', 'HTML5', 'CSS3', 'OpenWeather API', 'Chart.js'],
       liveUrl: '#',
       githubUrl: '#'
     }
@@ -108,5 +99,5 @@ const Projects: React.FC = () => {
   );
 };
 
-export default Projects;
+export { ProjectsComponent };
 

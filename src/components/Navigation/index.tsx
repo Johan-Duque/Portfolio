@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLanguage } from '../../contexts/LanguageContext';
+import { useLanguage } from '../../Hooks';
 import styles from './Navigation.module.css';
 import { SiGamedeveloper } from "react-icons/si";
 
@@ -82,5 +82,5 @@ const Navigation: React.FC = () => {
   );
 };
 
-export default Navigation;
+export { Navigation };
 

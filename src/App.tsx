@@ -1,12 +1,7 @@
-import React from 'react';
-import { LanguageProvider } from './contexts/LanguageContext';
-import Navigation from './components/Navigation';
-import Hero from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Technologies from './components/Technologies';
-import Footer from './components/Footer';
+import { LanguageProvider } from './Contexts/LanguageContext';
+import { Navigation } from './Components/Navigation';
+
+import { Home, About, Experience, Projects, Technologies, Footer } from './Sections'
 
 function App() {
   return (
@@ -14,7 +9,7 @@ function App() {
       <div className="App">
         <Navigation />
         <main>
-          <Hero />
+          <Home />
           <About />
           <Experience />
           <Projects />
@@ -26,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export { App };

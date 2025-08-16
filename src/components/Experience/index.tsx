@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLanguage } from '../../contexts/LanguageContext';
+import { useLanguage } from '../../Hooks';
 import styles from './Experience.module.css';
 
 interface ExperienceItem {
@@ -11,7 +11,7 @@ interface ExperienceItem {
   technologies: string[];
 }
 
-const Experience: React.FC = () => {
+const ExperienceComponent: React.FC = () => {
   const { t } = useLanguage();
 
   const experiences: ExperienceItem[] = [
@@ -85,5 +85,5 @@ const Experience: React.FC = () => {
   );
 };
 
-export default Experience;
+export { ExperienceComponent };
 

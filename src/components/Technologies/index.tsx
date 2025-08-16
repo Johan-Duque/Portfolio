@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLanguage } from '../../contexts/LanguageContext';
+import { useLanguage } from '../../Hooks';
 import styles from './Technologies.module.css';
 
 interface TechnologyCategory {
@@ -8,28 +8,23 @@ interface TechnologyCategory {
   icon: string;
 }
 
-const Technologies: React.FC = () => {
+const TechnologiesComponent: React.FC = () => {
   const { t } = useLanguage();
 
   const technologyCategories: TechnologyCategory[] = [
     {
       name: t('technologies.frontend'),
-      technologies: ['React', 'Vue.js', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Sass', 'Tailwind CSS'],
+      technologies: ['React', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3'],
       icon: '🎨'
     },
     {
       name: t('technologies.backend'),
-      technologies: ['Node.js', 'Express.js', 'Python', 'Django', 'PHP', 'Laravel', 'Java', 'Spring Boot'],
+      technologies: ['Python', 'Java', 'Spring Boot', 'MySQL'],
       icon: '⚙️'
     },
     {
-      name: t('technologies.database'),
-      technologies: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis', 'Firebase', 'Supabase', 'SQLite'],
-      icon: '🗄️'
-    },
-    {
       name: t('technologies.tools'),
-      technologies: ['Git', 'Docker', 'AWS', 'Heroku', 'Vercel', 'Figma', 'Postman', 'VS Code'],
+      technologies: ['Git', 'GitHub', 'VS Code', "NPM"],
       icon: '🛠️'
     }
   ];
@@ -67,7 +62,7 @@ const Technologies: React.FC = () => {
           ))}
         </div>
         
-        <div className={styles.skillsSummary}>
+        { /* <div className={styles.skillsSummary}>
           <div className={styles.summaryCard}>
             <h3>Skills Overview</h3>
             <p>I'm constantly learning and expanding my skill set to stay up-to-date with the latest technologies and best practices in web development.</p>
@@ -92,11 +87,11 @@ const Technologies: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
 };
 
-export default Technologies;
+export { TechnologiesComponent };
 

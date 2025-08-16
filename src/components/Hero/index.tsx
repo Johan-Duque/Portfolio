@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLanguage } from '../../contexts/LanguageContext';
+import { useLanguage } from '../../Hooks';
 import styles from './Hero.module.css';
 
 const Hero: React.FC = () => {
@@ -55,5 +55,5 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero;
+export { Hero };
 

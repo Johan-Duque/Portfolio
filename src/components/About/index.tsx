@@ -1,8 +1,8 @@
 import React from 'react';
-import { useLanguage } from '../../contexts/LanguageContext';
+import { useLanguage } from '../../Hooks';
 import styles from './About.module.css';
 
-const About: React.FC = () => {
+const AboutComponent: React.FC = () => {
   const { t } = useLanguage();
 
   return (
@@ -14,7 +14,9 @@ const About: React.FC = () => {
           <div className={styles.textSection}>
             <p className={styles.description}>{t('about.description')}</p>
             
-            <div className={styles.skillsSection}>
+            {/*
+            
+              <div className={styles.skillsSection}>
               <h3>{t('about.skills')}</h3>
               <div className={styles.skillsGrid}>
                 <div className={styles.skillItem}>
@@ -43,6 +45,28 @@ const About: React.FC = () => {
                 </div>
               </div>
             </div>
+
+            */}
+
+            {
+
+            <div className={styles.statsGrid}>
+              <div className={styles.statItem}>
+                <span className={styles.statNumber}>2+</span>
+                <span className={styles.statLabel}>{t('about.frontEnd_years')}</span>
+              </div>
+              <div className={styles.statItem}>
+                <span className={styles.statNumber}>1+</span>
+                <span className={styles.statLabel}>{t('about.backend_years')}</span>
+              </div>
+              <div className={styles.statItem}>
+                <span className={styles.statNumber}>2+</span>
+                <span className={styles.statLabel}>{t('about.computerEngineer_years')}</span>
+              </div>
+            </div>
+
+            }
+
           </div>
           
           <div className={styles.visualSection}>
@@ -63,20 +87,7 @@ const About: React.FC = () => {
               </div>
             </div>
             
-            <div className={styles.statsGrid}>
-              <div className={styles.statItem}>
-                <span className={styles.statNumber}>3+</span>
-                <span className={styles.statLabel}>Years Experience</span>
-              </div>
-              <div className={styles.statItem}>
-                <span className={styles.statNumber}>20+</span>
-                <span className={styles.statLabel}>Projects Completed</span>
-              </div>
-              <div className={styles.statItem}>
-                <span className={styles.statNumber}>15+</span>
-                <span className={styles.statLabel}>Happy Clients</span>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
@@ -84,5 +95,5 @@ const About: React.FC = () => {
   );
 };
 
-export default About;
+export { AboutComponent };
 

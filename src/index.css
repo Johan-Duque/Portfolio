@@ -1,0 +1,25 @@
+:root {
+
+  /* Background color Dark */
+  --color-6: #fff;
+  --color-5: #4493F8;
+  --color-4: #00abf0;
+  --color-3: #627EA2;
+  --color-2: #5C6878;
+  --color-1: #43474D;
+  --color-0: #000515;
+  --background-color: linear-gradient(-45deg, #000, #21232d, var(--color-0));
+  --content-color: rgb(188, 196, 209);
+
+    /* Background color Light */
+  --color-6: #fff;
+  --color-5: #4493F8;
+  --color-4: #00abf0;
+  --color-3: #627EA2;
+  --color-2: #5C6878;
+  --color-1: #43474D;
+  --color-0: #000515;
+  --background-color: linear-gradient(-45deg, #000, #21232d, var(--color-0));
+  --content-color: rgb(188, 196, 209);
+
+}

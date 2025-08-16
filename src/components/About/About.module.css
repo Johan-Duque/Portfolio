@@ -1,0 +1,223 @@
+.about {
+  padding: 6rem 0;
+  background: var(--background-color);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--content-color);
+  text-align: center;
+  margin-bottom: 4rem;
+  background: linear-gradient(45deg, var(--color-5), var(--color-4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: var(--content-color);
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.skillsSection h3 {
+  font-size: 1.5rem;
+  color: var(--color-5);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.skillsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skillItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skillName {
+  color: var(--content-color);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.skillBar {
+  height: 8px;
+  background: rgba(68, 147, 248, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skillProgress {
+  height: 100%;
+  background: linear-gradient(45deg, var(--color-5), var(--color-4));
+  border-radius: 4px;
+  transition: width 1s ease;
+  animation: skillFill 2s ease-out;
+}
+
+@keyframes skillFill {
+  from {
+    width: 0%;
+  }
+}
+
+.visualSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.profileCard {
+  background: rgba(68, 147, 248, 0.05);
+  border: 1px solid var(--color-3);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.profileImage {
+  margin-bottom: 1.5rem;
+}
+
+.imagePlaceholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--color-5), var(--color-4));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.profileInfo h4 {
+  color: var(--content-color);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.profileInfo p {
+  color: var(--color-5);
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.socialLink {
+  color: var(--color-5);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-3);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.socialLink:hover {
+  background: var(--color-5);
+  color: white;
+  border-color: var(--color-5);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.statItem {
+  background: rgba(68, 147, 248, 0.05);
+  border: 1px solid var(--color-3);
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.statItem:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-5);
+  box-shadow: 0 10px 25px rgba(68, 147, 248, 0.2);
+}
+
+.statNumber {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-5);
+  margin-bottom: 0.5rem;
+}
+
+.statLabel {
+  color: var(--content-color);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .profileCard {
+    padding: 1.5rem;
+  }
+  
+  .imagePlaceholder {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+  }
+}
+

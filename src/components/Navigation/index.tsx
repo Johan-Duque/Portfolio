@@ -1,6 +1,6 @@
 import { useLanguage } from '../../Hooks';
 import styles from './Navigation.module.css';
-import { SiGamedeveloper } from "react-icons/si";
+import { FaCode } from "react-icons/fa";
 
 function Navigation() {
   const { language, setLanguage, t } = useLanguage();
@@ -16,7 +16,7 @@ function Navigation() {
     <nav className={styles.navigation}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <span className={styles.logoText}>JD <SiGamedeveloper /></span>
+          <span className={styles.logoText}>JD <FaCode /></span>
         </div>
         
         <ul className={styles.navLinks}>

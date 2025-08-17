@@ -1,6 +1,12 @@
 import { useLanguage } from '../../Hooks';
 import styles from './Hero.module.css';
 
+import { FaReact } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3 } from "react-icons/fa";
+import { BiLogoTypescript } from "react-icons/bi";
+
 function Hero() {
   const { t } = useLanguage();
 
@@ -29,18 +35,21 @@ function Hero() {
           <div className={styles.visualContent}>
             <div className={styles.avatar}>
               <div className={styles.avatarCircle}>
-                <span className={styles.avatarText}>JD</span>
+                <FaReact className={styles.reactIcon} />
               </div>
             </div>
             <div className={styles.floatingElements}>
               <div className={styles.element} style={{ '--delay': '0s' } as React.CSSProperties}>
-                <span>React</span>
-              </div>
-              <div className={styles.element} style={{ '--delay': '1s' } as React.CSSProperties}>
-                <span>TypeScript</span>
+                <span><BiLogoTypescript/></span>
               </div>
               <div className={styles.element} style={{ '--delay': '2s' } as React.CSSProperties}>
-                <span>Node.js</span>
+                <span><FaNodeJs /></span>
+              </div>
+              <div className={styles.element} style={{ '--delay': '4s' } as React.CSSProperties}>
+                <span><FaCss3 /></span>
+              </div>
+              <div className={styles.element} style={{ '--delay': '6s' } as React.CSSProperties}>
+                <span><FaHtml5 ></FaHtml5></span>
               </div>
             </div>
           </div>

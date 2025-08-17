@@ -90,7 +90,7 @@
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: linear-gradient(45deg, var(--color-5), var(--color-4));
+  background-color: rgba(68, 146, 248, 0.192);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,10 +98,16 @@
   animation: pulse 2s infinite;
 }
 
+.reactIcon {
+  font-size: 7rem;
+  color: var(--color-4);
+  animation: rotate 20s linear infinite;
+}
+
 .avatarText {
   font-size: 4rem;
   font-weight: bold;
-  color: white;
+ color: white;
 }
 
 .floatingElements {
@@ -112,32 +118,45 @@
   bottom: 0;
 }
 
+.floatingElements svg {
+  height: 100%;
+  width: 100%;
+  font-size: 40px;
+}
+
 .element {
   position: absolute;
-  background: rgba(68, 147, 248, 0.1);
-  border: 1px solid var(--color-5);
-  color: var(--color-5);
+  color: var(--color-6);
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 500;
-  animation: float 3s ease-in-out infinite;
+  animation: orbit 8s linear infinite;
   animation-delay: var(--delay);
 }
 
 .element:nth-child(1) {
-  top: 20%;
-  left: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .element:nth-child(2) {
-  top: 60%;
-  right: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .element:nth-child(3) {
-  bottom: 20%;
-  left: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.element:nth-child(4) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .scrollIndicator {
@@ -177,7 +196,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.05);
+    transform: scale(1.025);
   }
 }
 
@@ -202,6 +221,24 @@
   }
 }
 
+@keyframes orbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(120px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(120px) rotate(-360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (max-width: 768px) {
   .content {
     grid-template-columns: 1fr;
@@ -220,6 +257,10 @@
   .avatarCircle {
     width: 200px;
     height: 200px;
+  }
+  
+  .reactIcon {
+    font-size: 5rem;
   }
   
   .avatarText {

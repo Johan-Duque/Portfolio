@@ -1,8 +1,7 @@
-import React from 'react';
 import { useLanguage } from '../../Hooks';
 import styles from './Footer.module.css';
 
-const FooterComponent: React.FC = () => {
+function FooterComponent() {
   const { t } = useLanguage();
 
   const currentYear = new Date().getFullYear();

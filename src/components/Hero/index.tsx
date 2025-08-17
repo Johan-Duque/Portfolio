@@ -1,8 +1,7 @@
-import React from 'react';
 import { useLanguage } from '../../Hooks';
 import styles from './Hero.module.css';
 
-const Hero: React.FC = () => {
+function Hero() {
   const { t } = useLanguage();
 
   const scrollToAbout = () => {

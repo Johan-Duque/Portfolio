@@ -1,4 +1,3 @@
-import React from 'react';
 import { useLanguage } from '../../Hooks';
 import styles from './Technologies.module.css';
 
@@ -8,13 +7,13 @@ interface TechnologyCategory {
   icon: string;
 }
 
-const TechnologiesComponent: React.FC = () => {
+function TechnologiesComponent() {
   const { t } = useLanguage();
 
   const technologyCategories: TechnologyCategory[] = [
     {
       name: t('technologies.frontend'),
-      technologies: ['React', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3'],
+      technologies: ['React', 'TypeScript', 'JavaScript', 'HTML5 / CSS3'],
       icon: '🎨'
     },
     {

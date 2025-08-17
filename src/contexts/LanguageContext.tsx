@@ -11,6 +11,9 @@ export const LanguageContext = createContext<LanguageContextType | undefined>(un
 // Traducciones
 const translations = {
   en: {
+
+    'languaje' : 'en',
+
     // Navigation
     'nav.home': 'Home',
     'nav.about': 'About Me',
@@ -25,14 +28,15 @@ const translations = {
     'home.cta': 'Get to know me',
     
     // About section
-    'about.title': 'About Me',
-    'about.description': 'I am a passionate Fron-End Developer with experience in modern web technologies. I love learning new things and solving complex problems. I am a passionate Fron-End Developer with experience in modern web technologies.',
-    'about.frontEnd_years' : 'Years Experience Front-End Developer',
-    'about.computerEngineer_years' : 'Years Studying Computer Engineer',
-    'about.backend_years' : 'Years Experience Backend Developer',
-    'about.skills': 'Skills',
-    'about.education': 'Education',
-    'about.interests': 'Interests',
+    'about.description_1': 'My name is Johan Omar Duque Pereira. I can use Front-End related technologies such as JavaScript, HTML, CSS, React, and TypeScript. Additionally, I also know how to use more Backend-oriented languages like Python, Java, C, and C++.',
+
+    'about.description_2': "I am a Computer Engineering student. I currently work on self-taught projects. Additionally, I continue studying Engineering at my university. I also keep learning through courses at the Platzi academy, where I've learned technologies like TypeScript and React",
+
+    'about.university' : "Experimental University of Táchira",
+    'about.university_degree' : "Computer Engineering",
+
+    'about.platzi' : "Platzi Academy",
+    'about.platzi_degree' : "Full-Stack Developer",
     
     // Experience section
     'experience.title': 'Experience',
@@ -55,49 +59,48 @@ const translations = {
     'contact.me': 'Contact Me',
   },
   es: {
+    "languaje": "es",
     // Navigation
-    'nav.home': 'Inicio',
-    'nav.about': 'Sobre Mí',
-    'nav.experience': 'Experiencia',
-    'nav.projects': 'Proyectos',
-    'nav.technologies': 'Tecnologías',
-    
+    "nav.home": "Inicio",
+    "nav.about": "Sobre mí",
+    "nav.experience": "Experiencia",
+    "nav.projects": "Proyectos",
+    "nav.technologies": "Tecnologías",
     // Home section
-    'home.title': 'Hola, soy',
-    'home.subtitle': 'Desarrollador Fron-End',
-    'home.description': 'Apasionado por crear soluciones digitales innovadoras y convertir ideas en realidad a través del código.',
-    'home.cta': 'Conoce más sobre mí',
-    
+    "home.title": "Hola, soy",
+    "home.subtitle": "Desarrollador Front-End",
+    "home.description": "Apasionado por crear soluciones digitales innovadoras y convertir ideas en realidad a través del código.",
+    "home.cta": "Conóceme",
     // About section
-    'about.title': 'Sobre Mí',
-    'about.description': 'Soy un Desarrollador Full Stack apasionado con experiencia en tecnologías web modernas. Me encanta aprender cosas nuevas y resolver problemas complejos.',
-    'about.skills': 'Habilidades',
-    'about.education': 'Educación',
-    'about.interests': 'Intereses',
-    
+    "about.title": "Sobre mí",
+    "about.description_1": "Mi nombre es Johan Omar Duque Pereira. Puedo usar tecnologías relacionadas con Front-End como JavaScript, HTML, CSS, React y TypeScript. Además, también sé cómo usar lenguajes más orientados a Backend como Python, Java, C y C++.",
+    "about.description_2": "Soy estudiante de Ingeniería en Computación. Actualmente trabajo en proyectos autodidactas. Además, continúo estudiando Ingeniería en mi universidad. También sigo aprendiendo a través de cursos en la academia Platzi, donde he aprendido tecnologías como TypeScript y React.",
+
+    "about.university": "Universidad Experimental del Táchira",
+    "about.university_degree": "Ingeniería En Informática",
+    "about.platzi": "Academia Platzi",
+    "about.platzi_degree": "Desarrollador Full-Stack",
     // Experience section
-    'experience.title': 'Experiencia Laboral',
-    'experience.current': 'Presente',
-    
+    "experience.title": "Experiencia",
+    "experience.current": "Actualidad",
     // Projects section
-    'projects.title': 'Mis Proyectos',
-    'projects.view': 'Ver Proyecto',
-    'projects.github': 'Ver Código',
-    
+    "projects.title": "Mis Proyectos",
+    "projects.view": "Ver proyecto",
+    "projects.github": "Ver código",
     // Technologies section
-    'technologies.title': 'Tecnologías y Herramientas',
-    'technologies.frontend': 'Frontend',
-    'technologies.backend': 'Backend',
-    'technologies.database': 'Base de Datos',
-    'technologies.tools': 'Herramientas',
-    
+    "technologies.title": "Tecnologías y herramientas",
+    "technologies.frontend": "Frontend",
+    "technologies.backend": "Backend",
+    "technologies.database": "Base de datos",
+    "technologies.tools": "Herramientas",
     // Common
-    'download.cv': 'Descargar CV',
-    'contact.me': 'Contáctame',
+    "download.cv": "Descargar CV",
+    "contact.me": "Contáctame"
   }
+
 };
 
-export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+export function LanguageProvider({ children }: { children: ReactNode }): React.ReactElement {
   const [language, setLanguage] = useState<'en' | 'es'>('en');
 
   const t = (key: string): string => {

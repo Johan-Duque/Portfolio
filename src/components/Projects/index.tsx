@@ -1,4 +1,3 @@
-import React from 'react';
 import { useLanguage } from '../../Hooks';
 import styles from './Projects.module.css';
 
@@ -12,7 +11,7 @@ interface Project {
   githubUrl?: string;
 }
 
-const ProjectsComponent: React.FC = () => {
+function ProjectsComponent() {
   const { t } = useLanguage();
 
   const projects: Project[] = [
@@ -89,11 +88,6 @@ const ProjectsComponent: React.FC = () => {
           ))}
         </div>
         
-        <div className={styles.viewMoreSection}>
-          <button className={styles.viewMoreButton}>
-            View More Projects
-          </button>
-        </div>
       </div>
     </section>
   );

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useLanguage } from '../../Hooks';
 import styles from './Experience.module.css';
 
@@ -11,7 +10,7 @@ interface ExperienceItem {
   technologies: string[];
 }
 
-const ExperienceComponent: React.FC = () => {
+function ExperienceComponent() {
   const { t } = useLanguage();
 
   const experiences: ExperienceItem[] = [
@@ -75,11 +74,6 @@ const ExperienceComponent: React.FC = () => {
           ))}
         </div>
         
-        <div className={styles.downloadSection}>
-          <button className={styles.downloadButton}>
-            {t('download.cv')}
-          </button>
-        </div>
       </div>
     </section>
   );

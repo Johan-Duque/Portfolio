@@ -1,94 +1,81 @@
-import React from 'react';
 import { useLanguage } from '../../Hooks';
 import styles from './About.module.css';
 
-const AboutComponent: React.FC = () => {
+import { PiReadCvLogoFill } from "react-icons/pi";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+import { IoIosHourglass } from "react-icons/io";
+import { PiCertificate } from "react-icons/pi";
+
+function AboutComponent() {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className={styles.about}>
+    <section className={styles.about}>
       <div className={styles.container}>
-        <h2 className={styles.title}>{t('about.title')}</h2>
-        
         <div className={styles.content}>
-          <div className={styles.textSection}>
-            <p className={styles.description}>{t('about.description')}</p>
-            
-            {/*
-            
-              <div className={styles.skillsSection}>
-              <h3>{t('about.skills')}</h3>
-              <div className={styles.skillsGrid}>
-                <div className={styles.skillItem}>
-                  <span className={styles.skillName}>Frontend Development</span>
-                  <div className={styles.skillBar}>
-                    <div className={styles.skillProgress} style={{ width: '90%' }}></div>
-                  </div>
+         
+          <div className={styles.leftColumn}>
+            <div className={styles.aboutSection}>
+              <div className={styles.titleContainer}>
+                <div className={styles.profileImage}>
+                    <img src="https://i.ibb.co/zTJdCf30/Foto-Personal.jpg" alt="Personal Photo" />
                 </div>
-                <div className={styles.skillItem}>
-                  <span className={styles.skillName}>Backend Development</span>
-                  <div className={styles.skillBar}>
-                    <div className={styles.skillProgress} style={{ width: '85%' }}></div>
-                  </div>
-                </div>
-                <div className={styles.skillItem}>
-                  <span className={styles.skillName}>Database Design</span>
-                  <div className={styles.skillBar}>
-                    <div className={styles.skillProgress} style={{ width: '80%' }}></div>
-                  </div>
-                </div>
-                <div className={styles.skillItem}>
-                  <span className={styles.skillName}>DevOps & CI/CD</span>
-                  <div className={styles.skillBar}>
-                    <div className={styles.skillProgress} style={{ width: '75%' }}></div>
-                  </div>
+                <h2 className={styles.title}>{t('languaje') == 'en' ? 'About Me' : 'Sobre Mi'}</h2>
+              </div>
+              <div className={styles.aboutContent}>
+                <p className={styles.description_1}>
+                  {t('about.description_1')}
+                </p>
+                <p className={styles.description_2}>
+                  {t('about.description_2')}
+                </p>
+                <div className={styles.buttonRow}>
+                  <a href={ t('languaje') == 'en' ? 'https://docs.google.com/document/d/14fZXEZoCCXrdMKUc7acDuAE51R37ATjG/edit?usp=sharing&ouid=111385114366457343190&rtpof=true&sd=true' : 'https://docs.google.com/document/d/17u_4RzUgfRf-UocXM7h4UoN2zKnYDcHQ/edit?usp=sharing&ouid=111385114366457343190&rtpof=true&sd=true'} target="_blank" rel="noopener noreferrer" className={styles.externalButton}>
+                    CV <PiReadCvLogoFill />
+                  </a>
+                  <a href="https://www.linkedin.com/in/johan-omar-duque-pereira-05160733a/" target="_blank" rel="noopener noreferrer" className={styles.externalButton}>
+                    LinkedIn <FaLinkedin />
+                  </a>
+                  <a href="https://github.com/Johan-Duque" target="_blank" rel="noopener noreferrer" className={styles.externalButton}>
+                    Github <FaGithub />
+                  </a>
+                  <a href="mailto:jhoandp1995@gmail.com" target="_blank" rel="noopener noreferrer" className={styles.externalButton}>
+                  {t('languaje') == 'en' ? 'Gmail' : 'Correo'} <SiGmail />
+                  </a>
                 </div>
               </div>
             </div>
-
-            */}
-
-            {
-
-            <div className={styles.statsGrid}>
-              <div className={styles.statItem}>
-                <span className={styles.statNumber}>2+</span>
-                <span className={styles.statLabel}>{t('about.frontEnd_years')}</span>
-              </div>
-              <div className={styles.statItem}>
-                <span className={styles.statNumber}>1+</span>
-                <span className={styles.statLabel}>{t('about.backend_years')}</span>
-              </div>
-              <div className={styles.statItem}>
-                <span className={styles.statNumber}>2+</span>
-                <span className={styles.statLabel}>{t('about.computerEngineer_years')}</span>
-              </div>
-            </div>
-
-            }
-
           </div>
-          
-          <div className={styles.visualSection}>
-            <div className={styles.profileCard}>
-              <div className={styles.profileImage}>
-                <div className={styles.imagePlaceholder}>
-                  <span>JD</span>
+
+          <div className={styles.rightColumn}>
+            <div className={styles.educationSection}>
+              <h2 className={styles.educationTitle}>{t('languaje') == 'en' ? 'Education' : 'Educacion'}</h2>
+              <div className={styles.educationList}>
+
+                <div className={styles.educationItem}>
+                  <div className={styles.educationHeader}>
+                    <h3 className={styles.institutionName}>{t('about.university')}</h3>
+                    <span className={styles.period}><IoIosHourglass/> 2022 - {t('languaje') == 'en' ? 'Currently' : 'Actualmente'}</span>
+                  </div>
+                  <h4 className={styles.degree}><PiCertificate/> {t('about.university_degree')}</h4>
                 </div>
-              </div>
-              <div className={styles.profileInfo}>
-                <h4>Jhoan Developer</h4>
-                <p>Full Stack Developer</p>
-                <div className={styles.socialLinks}>
-                  <a href="#" className={styles.socialLink}>GitHub</a>
-                  <a href="#" className={styles.socialLink}>LinkedIn</a>
-                  <a href="#" className={styles.socialLink}>Twitter</a>
+
+                <div className={styles.educationItem}>
+                  <div className={styles.educationHeader}>
+                    <h3 className={styles.institutionName}>{t('about.platzi')}</h3>
+                    <span className={styles.period}><IoIosHourglass/> 2024 - {t('languaje') == 'en' ? 'Currently' : 'Actualmente'}</span>
+                  </div>
+                  <h4 className={styles.degree}><PiCertificate/> {t('about.platzi_degree')}</h4>
                 </div>
+
+                {/* Certificaciones */}
+
               </div>
             </div>
-            
-
           </div>
+
         </div>
       </div>
     </section>

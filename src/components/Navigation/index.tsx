@@ -1,9 +1,8 @@
-import React from 'react';
 import { useLanguage } from '../../Hooks';
 import styles from './Navigation.module.css';
 import { SiGamedeveloper } from "react-icons/si";
 
-const Navigation: React.FC = () => {
+function Navigation() {
   const { language, setLanguage, t } = useLanguage();
 
   const scrollToSection = (sectionId: string) => {
@@ -17,7 +16,7 @@ const Navigation: React.FC = () => {
     <nav className={styles.navigation}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <span className={styles.logoText}>JD <SiGamedeveloper></SiGamedeveloper></span>
+          <span className={styles.logoText}>JD <SiGamedeveloper /></span>
         </div>
         
         <ul className={styles.navLinks}>

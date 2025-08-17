@@ -1,4 +1,5 @@
-import { AboutComponent } from '../../Components/About';
+import React from 'react';
+import {AboutComponent} from '../../Components/About';
 
 function About() {
   return (

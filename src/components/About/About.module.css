@@ -23,6 +23,7 @@
   border-radius: 20px;
   backdrop-filter: blur(10px);
   overflow: hidden;
+  margin: 3rem 0;
 }
 
 /* Columna izquierda - About */
@@ -88,22 +89,13 @@
   text-align: justify;
 }
 
-.description_1 {
+.descriptionAbout {
   color: var(--content-color);
   line-height: 1.8;
   font-size: 1.1rem;
   opacity: 0.9;
   text-align: justify;
   margin: 0 0 2rem 0;
-}
-
-.description_2 {
-  color: var(--content-color);
-  line-height: 1.8;
-  font-size: 1.1rem;
-  opacity: 0.9;
-  text-align: justify;
-  margin: 0;
 }
 
 .buttonRow {
@@ -228,12 +220,16 @@
   gap: 5px
 }
 
-.educationDescription {
-  color: var(--content-color);
-  line-height: 1.5;
-  font-size: 0.8rem;
-  opacity: 0.8;
-  margin: 0;
+.certificationsLink {
+  color: var(--color-6);
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--color-5);
+  outline: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
 /* Responsive */

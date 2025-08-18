@@ -48,9 +48,9 @@ body {
   min-height: 100vh;
 }
 
-main {
-  padding-top: 80px; /* Espacio para la navegación fija */
-}
+/* main {
+  padding-top: 80px; 
+}*/
 
 /* Estilos para scrollbar personalizada */
 ::-webkit-scrollbar {

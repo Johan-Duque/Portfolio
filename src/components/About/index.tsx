@@ -7,6 +7,7 @@ import { FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { IoIosHourglass } from "react-icons/io";
 import { PiCertificate } from "react-icons/pi";
+import { AiFillSafetyCertificate } from "react-icons/ai";
 
 function AboutComponent() {
   const { t } = useLanguage();
@@ -25,10 +26,10 @@ function AboutComponent() {
                 <h2 className={styles.title}>{t('languaje') == 'en' ? 'About Me' : 'Sobre Mi'}</h2>
               </div>
               <div className={styles.aboutContent}>
-                <p className={styles.description_1}>
+                <p className={styles.descriptionAbout}>
                   {t('about.description_1')}
                 </p>
-                <p className={styles.description_2}>
+                <p className={styles.descriptionAbout}>
                   {t('about.description_2')}
                 </p>
                 <div className={styles.buttonRow}>
@@ -71,6 +72,10 @@ function AboutComponent() {
                 </div>
 
                 {/* Certificaciones */}
+                  <a href="https://drive.google.com/drive/folders/17fASDgzDkv51QvjHII05LULkgNXhuRNz?usp=sharing" target='blanck' 
+                  className={`${styles.educationItem} ${styles.certificationsLink}`}>
+                    {t('languaje') == 'en' ? 'Certifications' : 'Certificaciones'} <AiFillSafetyCertificate />
+                  </a>
 
               </div>
             </div>

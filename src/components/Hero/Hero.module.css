@@ -56,17 +56,27 @@
   opacity: 0.9;
 }
 
+.containerButtons {
+  display: flex;
+  gap: 10px;
+}
+
 .ctaButton {
   background: linear-gradient(45deg, var(--color-5), var(--color-4));
   color: white;
   border: none;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  border-radius: 50px;
+  border-radius: 7px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(68, 147, 248, 0.3);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
 }
 
 .ctaButton:hover {
@@ -132,28 +142,6 @@
   font-size: 0.9rem;
   font-weight: 500;
   animation: orbit 8s linear infinite;
-  animation-delay: var(--delay);
-}
-
-.element:nth-child(1) {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.element:nth-child(2) {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.element:nth-child(3) {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.element:nth-child(4) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -223,10 +211,10 @@
 
 @keyframes orbit {
   0% {
-    transform: translate(-50%, -50%) rotate(0deg) translateX(120px) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(var(--start-rotation, 0deg)) translateX(120px) rotate(0deg);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(360deg) translateX(120px) rotate(-360deg);
+    transform: translate(-50%, -50%) rotate(calc(var(--start-rotation, 0deg) + 360deg)) translateX(120px) rotate(-360deg);
   }
 }
 
@@ -236,6 +224,35 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.iconWrapper1 {
+  animation: none;
+  rotate: 0deg !important;
+}
+
+.iconWrapper2 {
+  animation: none;
+  rotate: -90deg !important;
+}
+
+.iconWrapper3 {
+  animation: none;
+  rotate: -180deg !important;
+}
+
+.iconWrapper4 {
+  animation: none;
+  rotate: 90deg !important;
+}
+
+@keyframes counterRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg); /* Counter-rotate to keep icon upright */
   }
 }
 
@@ -263,7 +280,7 @@
     font-size: 5rem;
   }
   
-  .avatarText {
+.avatarText {
     font-size: 2.5rem;
   }
   
@@ -271,4 +288,3 @@
     display: none;
   }
 }
-

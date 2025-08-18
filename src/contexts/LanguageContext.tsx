@@ -24,11 +24,10 @@ const translations = {
     // Home section
     'home.title': 'Hi, I\'m',
     'home.subtitle': 'Front-End Developer',
-    'home.description': 'Passionate about creating innovative digital solutions and turning ideas into reality through code.',
-    'home.cta': 'Get to know me',
+    'home.description': 'Student of Computer Engineering with experience in web applications and programming.',
     
     // About section
-    'about.description_1': 'My name is Johan Omar Duque Pereira. I can use Front-End related technologies such as JavaScript, HTML, CSS, React, and TypeScript. Additionally, I also know how to use more Backend-oriented languages like Python, Java, C, and C++.',
+    'about.description_1': 'My name is Johan Omar Duque Pereira. I can use Front-End related technologies such as JavaScript, HTML, CSS, React, and TypeScript. Additionally, I also know how to use more Backend-oriented languages like Python, Java, C, and C++. I also know how to use more Backend-oriented languages like Python, Java, C, and C++.',
 
     'about.description_2': "I am a Computer Engineering student. I currently work on self-taught projects. Additionally, I continue studying Engineering at my university. I also keep learning through courses at the Platzi academy, where I've learned technologies like TypeScript and React",
 
@@ -69,12 +68,11 @@ const translations = {
     // Home section
     "home.title": "Hola, soy",
     "home.subtitle": "Desarrollador Front-End",
-    "home.description": "Apasionado por crear soluciones digitales innovadoras y convertir ideas en realidad a través del código.",
-    "home.cta": "Conóceme",
+    "home.description": "Estudiante de Ingeniería en Informática con experiencia en aplicaciones web y programación.",
     // About section
     "about.title": "Sobre mí",
     "about.description_1": "Mi nombre es Johan Omar Duque Pereira. Puedo usar tecnologías relacionadas con Front-End como JavaScript, HTML, CSS, React y TypeScript. Además, también sé cómo usar lenguajes más orientados a Backend como Python, Java, C y C++.",
-    "about.description_2": "Soy estudiante de Ingeniería en Computación. Actualmente trabajo en proyectos autodidactas. Además, continúo estudiando Ingeniería en mi universidad. También sigo aprendiendo a través de cursos en la academia Platzi, donde he aprendido tecnologías como TypeScript y React.",
+    "about.description_2": "Soy estudiante de Ingeniería en Informática. Actualmente trabajo en proyectos autodidactas. Además, continúo estudiando Ingeniería en mi universidad. También sigo aprendiendo a través de cursos en la academia Platzi, donde he aprendido tecnologías como TypeScript y React.",
 
     "about.university": "Universidad Experimental del Táchira",
     "about.university_degree": "Ingeniería En Informática",

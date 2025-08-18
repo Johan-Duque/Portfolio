@@ -109,11 +109,17 @@
   display: block;
 }
 
+.companyInfo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
 .companyName {
   font-size: 1.1rem;
   color: var(--content-color);
   font-weight: 500;
-  margin-right: 1rem;
 }
 
 .jobPeriod {

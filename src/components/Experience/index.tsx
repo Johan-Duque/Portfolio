@@ -34,8 +34,10 @@ function ExperienceComponent({itemsExperience} : props) {
               <div className={styles.timelineContent}>
                 <div className={styles.jobHeader}>
                   <h3 className={styles.jobTitle}>{exp.position}</h3>
-                  <span className={styles.companyName}>{exp.company}</span>
-                  <span className={styles.jobPeriod}>{exp.period}</span>
+                  <div className={styles.companyInfo}>
+                    <span className={styles.companyName}>{exp.company}</span>
+                    <span className={styles.jobPeriod}>{exp.period}</span>
+                  </div>
                 </div>
                 
                 <p className={styles.jobDescription}>{exp.description}</p>

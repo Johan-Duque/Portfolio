@@ -96,6 +96,7 @@ function Hero() {
         <div className={styles.scrollIndicator}>
           <div className={styles.scrollArrow}></div>
         </div>
+        
       </div>
     </section>
   );

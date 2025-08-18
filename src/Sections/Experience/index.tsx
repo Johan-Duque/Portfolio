@@ -19,7 +19,7 @@ function Experience() {
       company: "Distribuciones Pereira",
       position: t('languaje') == 'en' ? 'Front-End Developer' : 'Desarrollador Fron-End',
       period: `${t('languaje') == 'en' ? 'June 2025 - August 2025' : 'Junio 2025 - Agosto 2025'}`,
-      description: `${t('languaje') == 'en' ? 'June 2025 - August 2025' : 'Junio 2025 - Agosto 2025'}`,
+      description: `${t('languaje') == 'en' ? 'reated a modern web application for "Distribuciones Pereira" using React, TypeScript, and Vite. The project highlights component architecture, form handling with React Hook Form + ZOD, and performance optimization with Lazy Loading and Error Boundaries' : 'Creé una aplicación web moderna para "Distribuciones Pereira" con React, TypeScript y Vite. El proyecto destaca la arquitectura de componentes, el manejo de formularios con React Hook Form + ZOD y la optimización del rendimiento con Lazy Loading y Error Boundaries'}`,
       technologies: ["HTML", "CSS", "TypeScript", "React", "Vite", "Git", "GitHub"],
     },
       {

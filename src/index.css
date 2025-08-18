@@ -48,9 +48,9 @@ body {
   min-height: 100vh;
 }
 
-/* main {
-  padding-top: 80px; 
-}*/
+main {
+  padding-top: 0;
+}
 
 /* Estilos para scrollbar personalizada */
 ::-webkit-scrollbar {
@@ -135,7 +135,7 @@ textarea:focus {
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
   main {
-    padding-top: 120px; /* Más espacio en móviles */
+    padding-top: 1.5625rem; /* 25px */
   }
   
   body {

@@ -27,9 +27,9 @@ const translations = {
     'home.description': 'Student of Computer Engineering with experience in web applications and programming.',
     
     // About section
-    'about.description_1': 'My name is Johan Omar Duque Pereira. I can use Front-End related technologies such as JavaScript, HTML, CSS, React, and TypeScript. Additionally, I also know how to use more Backend-oriented languages like Python, Java, C, and C++. I also know how to use more Backend-oriented languages like Python, Java, C, and C++.',
+    'about.description_1': "My name is Johan Omar Duque Pereira. I'm a computer engineering student with experience in Front-End technologies such as JavaScript, HTML, CSS, React, and TypeScript. I also have a solid grasp of Git and GitHub, and I'm proficient in databases using SQL",
 
-    'about.description_2': "I am a Computer Engineering student. I currently work on self-taught projects. Additionally, I continue studying Engineering at my university. I also keep learning through courses at the Platzi academy, where I've learned technologies like TypeScript and React",
+    'about.description_2': "My skills also extend to Back-End development with Python, Java, C, and C++. I combine my university studies with work on self-taught projects and continuous learning on platforms like Platzi, where I've gained a deeper understanding of key technologies like TypeScript and React",
 
     'about.university' : "Experimental University of Táchira",
     'about.university_degree' : "Computer Engineering",
@@ -71,8 +71,8 @@ const translations = {
     "home.description": "Estudiante de Ingeniería en Informática con experiencia en aplicaciones web y programación.",
     // About section
     "about.title": "Sobre mí",
-    "about.description_1": "Mi nombre es Johan Omar Duque Pereira. Puedo usar tecnologías relacionadas con Front-End como JavaScript, HTML, CSS, React y TypeScript. Además, también sé cómo usar lenguajes más orientados a Backend como Python, Java, C y C++.",
-    "about.description_2": "Soy estudiante de Ingeniería en Informática. Actualmente trabajo en proyectos autodidactas. Además, continúo estudiando Ingeniería en mi universidad. También sigo aprendiendo a través de cursos en la academia Platzi, donde he aprendido tecnologías como TypeScript y React.",
+    "about.description_1": "Mi nombre es Johan Omar Duque Pereira. Soy estudiante de Ingeniería en Informática con experiencia en tecnologías Front-End como JavaScript, HTML, CSS, React y TypeScript. Además, tengo un sólido manejo de Git y GitHub, y domino bases de datos con SQL.",
+    "about.description_2": "Mis habilidades también se extienden al desarrollo Back-End con Python, Java, C y C++. Combino mis estudios universitarios con el trabajo en proyectos autodidactas y el aprendizaje continuo en plataformas como Platzi, donde he profundizado en tecnologías clave como TypeScript y React.",
 
     "about.university": "Universidad Experimental del Táchira",
     "about.university_degree": "Ingeniería En Informática",

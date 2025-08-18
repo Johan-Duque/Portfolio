@@ -1,15 +1,23 @@
+import { useState } from 'react';
 import { useLanguage } from '../../Hooks';
 import styles from './Navigation.module.css';
 import { FaCode } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function Navigation() {
   const { language, setLanguage, t } = useLanguage();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    setMenuOpen(false); 
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
 
   return (
@@ -19,7 +27,7 @@ function Navigation() {
           <span className={styles.logoText}>JD <FaCode /></span>
         </div>
         
-        <ul className={styles.navLinks}>
+        <ul className={`${styles.navLinks} ${menuOpen ? styles.active : ''}`}>
           <li>
             <button 
               onClick={() => scrollToSection('home')}
@@ -62,24 +70,30 @@ function Navigation() {
           </li>
         </ul>
 
-        <div className={styles.languageToggle}>
-          <button
-            className={`${styles.langBtn} ${language === 'en' ? styles.active : ''}`}
-            onClick={() => setLanguage('en')}
-          >
-            EN
-          </button>
-          <button
-            className={`${styles.langBtn} ${language === 'es' ? styles.active : ''}`}
-            onClick={() => setLanguage('es')}
-          >
-            ES
-          </button>
+        <div className={styles.rightControls}>
+            <div className={styles.languageToggle}>
+              <button
+                className={`${styles.langBtn} ${language === 'en' ? styles.active : ''}`}
+                onClick={() => setLanguage('en')}
+              >
+                EN
+              </button>
+              <button
+                className={`${styles.langBtn} ${language === 'es' ? styles.active : ''}`}
+                onClick={() => setLanguage('es')}
+              >
+                ES
+              </button>
+            </div>
+
+            <div className={styles.hamburger} onClick={toggleMenu}>
+                <GiHamburgerMenu />
+            </div>
         </div>
+
       </div>
     </nav>
   );
 };
 
 export { Navigation };
-

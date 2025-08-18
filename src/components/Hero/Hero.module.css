@@ -262,6 +262,14 @@
     gap: 2rem;
     text-align: center;
   }
+
+  .containerButtons {
+    justify-content: center;
+  }
+
+  .scrollIndicator {
+    display: none;
+  }
   
   .title {
     font-size: 2.5rem;

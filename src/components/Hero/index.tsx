@@ -4,7 +4,7 @@ import styles from "./Hero.module.css";
 import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
-import { FaCss3 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaDownload } from "react-icons/fa";
 
@@ -76,7 +76,7 @@ function Hero() {
                 style={{ "--start-rotation": "180deg" } as React.CSSProperties}
               >
                 <div className={styles.iconWrapper3}>
-                  <FaCss3 />
+                  <FaCss3Alt />
                 </div>
               </div>
               <div

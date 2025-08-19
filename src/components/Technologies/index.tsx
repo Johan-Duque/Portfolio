@@ -1,9 +1,30 @@
-import { useLanguage } from '../../Hooks';
-import styles from './Technologies.module.css';
+import type { ReactNode } from "react";
+import { useLanguage } from "../../Hooks";
+import styles from "./Technologies.module.css";
+
+import { BiLogoTypescript } from "react-icons/bi";
+import { BiLogoJavascript } from "react-icons/bi";
+import { FaReact } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+
+import { BiLogoPostgresql } from "react-icons/bi";
+import { FaPython } from "react-icons/fa";
+import { FaJava } from "react-icons/fa";
+import { SiSpringboot} from "react-icons/si";
+import { SiCplusplus } from "react-icons/si";
+
+import { FaGitAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { VscVscode } from "react-icons/vsc";
+import { SiVite } from "react-icons/si";
+import { RiNpmjsFill } from "react-icons/ri";
+
+type TechnologyType = [ReactNode, string];
 
 interface TechnologyCategory {
   name: string;
-  technologies: string[];
+  technologies: TechnologyType[];
   icon: string;
 }
 
@@ -12,27 +33,45 @@ function TechnologiesComponent() {
 
   const technologyCategories: TechnologyCategory[] = [
     {
-      name: t('technologies.frontend'),
-      technologies: ['React', 'TypeScript', 'JavaScript', 'HTML5 / CSS3'],
-      icon: '🎨'
+      name: 'Front-End',
+      technologies: [
+        [<FaHtml5 />, "HTML"],
+        [<FaCss3Alt />, "CSS"],
+        [<BiLogoJavascript />, "JavaScript"],
+        [<BiLogoTypescript />, "TypeScript"],
+        [<FaReact />, "React"],
+      ],
+      icon: "🎨",
     },
     {
-      name: t('technologies.backend'),
-      technologies: ['Python', 'Java', 'Spring Boot', 'MySQL'],
-      icon: '⚙️'
+      name: 'Backend',
+      technologies: [
+        [<BiLogoPostgresql />, "SQL"],
+        [<FaJava />, "Java"],
+        [<FaPython />, "Python"],
+        [<SiCplusplus />, "C++ / C"],
+        [<SiSpringboot />, "Springboot"],
+      ],
+      icon: "⚙️",
     },
     {
-      name: t('technologies.tools'),
-      technologies: ['Git', 'GitHub', 'VS Code', "NPM"],
-      icon: '🛠️'
-    }
+      name: t("languaje") == 'en' ? 'Tools' : 'Herramientas',
+      technologies: [
+        [<RiNpmjsFill />, "NPM"],
+        [<FaGitAlt />, "Git"],
+        [<SiVite />, "Vite"],
+        [<VscVscode />, "VsCode"],
+        [<FaGithub />, "GitHub"],
+      ],
+      icon: "🛠️",
+    },
   ];
 
   return (
     <section id="technologies" className={styles.technologies}>
       <div className={styles.container}>
-        <h2 className={styles.title}>{t('technologies.title')}</h2>
-        
+        <h2 className={styles.title}>{t("technologies.title")}</h2>
+
         <div className={styles.categoriesGrid}>
           {technologyCategories.map((category, index) => (
             <div key={index} className={styles.categoryCard}>
@@ -40,57 +79,21 @@ function TechnologiesComponent() {
                 <span className={styles.categoryIcon}>{category.icon}</span>
                 <h3 className={styles.categoryName}>{category.name}</h3>
               </div>
-              
+
               <div className={styles.technologiesList}>
                 {category.technologies.map((tech, techIndex) => (
                   <div key={techIndex} className={styles.technologyItem}>
                     <span className={styles.technologyName}>{tech}</span>
-                    <div className={styles.technologyBar}>
-                      <div 
-                        className={styles.technologyProgress} 
-                        style={{ 
-                          width: `${Math.random() * 30 + 70}%`,
-                          animationDelay: `${techIndex * 0.1}s`
-                        } as React.CSSProperties}
-                      ></div>
-                    </div>
                   </div>
                 ))}
               </div>
             </div>
           ))}
         </div>
-        
-        { /* <div className={styles.skillsSummary}>
-          <div className={styles.summaryCard}>
-            <h3>Skills Overview</h3>
-            <p>I'm constantly learning and expanding my skill set to stay up-to-date with the latest technologies and best practices in web development.</p>
-            <div className={styles.skillLevels}>
-              <div className={styles.skillLevel}>
-                <span className={styles.levelLabel}>Advanced</span>
-                <div className={styles.levelBar}>
-                  <div className={styles.levelProgress} style={{ width: '85%' }}></div>
-                </div>
-              </div>
-              <div className={styles.skillLevel}>
-                <span className={styles.levelLabel}>Intermediate</span>
-                <div className={styles.levelBar}>
-                  <div className={styles.levelProgress} style={{ width: '70%' }}></div>
-                </div>
-              </div>
-              <div className={styles.skillLevel}>
-                <span className={styles.levelLabel}>Learning</span>
-                <div className={styles.levelBar}>
-                  <div className={styles.levelProgress} style={{ width: '45%' }}></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
+
       </div>
     </section>
   );
-};
+}
 
 export { TechnologiesComponent };
-

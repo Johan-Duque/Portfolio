@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { LanguageProvider } from './Contexts/LanguageContext';
+import { LanguageProvider } from './Contexts/LanguageContext.tsx';
 import { Navigation, Loading } from './Components';
 
 import { Home } from './Sections';

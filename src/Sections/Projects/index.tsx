@@ -66,8 +66,8 @@ function Projects() {
     description: t('language') == 'en' ? 'Landing Page for the company "Distribuciones Pereira" built with React 19. Form handling was implemented using React Hook Form and ZOD + Lazy Loading' : 'Landing Page para la empresa "Distribuciones Pereira" hecha con React 19. Se aplico el manejo de formularios con React Hook Form y ZOD + Lazy Loading',
     image: "https://i.ibb.co/GvTJZdKc/img-responsive.png",
     technologies: ["TypeScript", "React", "Vite", "GitHub"],
-    liveUrl: "https://johan-duque.github.io/DistribucionesPereira-2025",
-    githubUrl: "https://github.com/Johan-Duque/DistribucionesPereira-2025",
+    liveUrl: "https://distribuciones-pereira.vercel.app",
+    githubUrl: "https://github.com/Johan-Duque/Distribuciones-Pereira",
   },
   {
     title: t('language') == 'en' ? 'Quantum Chemistry' : 'Química Cuántica',

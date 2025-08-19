@@ -9,6 +9,7 @@
 }
 
 .carouselContentWrapper {
+  width: 100vw;
   overflow: hidden;
   flex-grow: 1;
 }

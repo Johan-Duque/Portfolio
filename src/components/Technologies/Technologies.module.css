@@ -117,96 +117,9 @@
   font-size: 2.5rem;
 }
 
-.technologyBar {
-  height: 6px;
-  background: rgba(68, 147, 248, 0.1);
-  border-radius: 3px;
-  overflow: hidden;
-  position: relative;
-}
 
-.technologyProgress {
-  height: 100%;
-  background: linear-gradient(45deg, var(--color-5), var(--color-4));
-  border-radius: 3px;
-  transition: width 1s ease;
-  animation: techFill 2s ease-out;
-}
 
-@keyframes techFill {
-  from {
-    width: 0%;
-  }
-}
 
-.skillsSummary {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.summaryCard {
-  background: rgba(68, 147, 248, 0.05);
-  border: 1px solid var(--color-3);
-  border-radius: 20px;
-  padding: 2rem;
-  text-align: center;
-  backdrop-filter: blur(10px);
-}
-
-.summaryCard h3 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: var(--color-5);
-  margin-bottom: 1rem;
-}
-
-.summaryCard p {
-  color: var(--content-color);
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-}
-
-.skillLevels {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.skillLevel {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.levelLabel {
-  color: var(--content-color);
-  font-weight: 500;
-  min-width: 100px;
-  text-align: left;
-}
-
-.levelBar {
-  flex: 1;
-  height: 8px;
-  background: rgba(68, 147, 248, 0.1);
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.levelProgress {
-  height: 100%;
-  background: linear-gradient(45deg, var(--color-5), var(--color-4));
-  border-radius: 4px;
-  transition: width 1s ease;
-  animation: levelFill 2s ease-out;
-}
-
-@keyframes levelFill {
-  from {
-    width: 0%;
-  }
-}
 
 @media (max-width: 768px) {
   .categoriesGrid {

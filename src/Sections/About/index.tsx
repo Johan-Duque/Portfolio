@@ -1,11 +1,8 @@
-import React from 'react';
 import {AboutComponent} from '../../Components/About';
 
 function About() {
   return (
-    <section id="about">
       <AboutComponent />
-    </section>
   );
 }
 

@@ -55,7 +55,7 @@ function TechnologiesComponent() {
       icon: "⚙️",
     },
     {
-      name: t("languaje") == 'en' ? 'Tools' : 'Herramientas',
+      name: t("language") == 'en' ? 'Tools' : 'Herramientas',
       technologies: [
         [<RiNpmjsFill />, "NPM"],
         [<FaGitAlt />, "Git"],
@@ -70,7 +70,7 @@ function TechnologiesComponent() {
   return (
     <section id="technologies" className={styles.technologies}>
       <div className={styles.container}>
-        <h2 className={styles.title}>{t("technologies.title")}</h2>
+        <h2 className={styles.title}>{t('language') == 'en' ? 'Technologies & Tools' : 'Tecnologias & Herramientas'}</h2>
 
         <div className={styles.categoriesGrid}>
           {technologyCategories.map((category, index) => (

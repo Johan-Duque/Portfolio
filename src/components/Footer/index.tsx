@@ -13,7 +13,7 @@ function FooterComponent() {
         
         <div className={styles.footerBottom}>
           <div className={styles.copyright}>
-            <p>&copy; {currentYear}{t('languaje') == 'en' ? ' Johan Developer. All rights reserved' : ' Johan Developer. Todos los derechos reservados'}</p>
+            <p>&copy; {currentYear}{t('language') == 'en' ? ' Johan Developer. All rights reserved' : ' Johan Developer. Todos los derechos reservados'}</p>
           </div>
         </div>
         

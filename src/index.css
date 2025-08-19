@@ -1,5 +1,4 @@
 :root {
-  /* Background color Dark */
   --color-6: #fff;
   --color-5: #4493F8;
   --color-4: #00abf0;
@@ -10,7 +9,7 @@
   --background-color: linear-gradient(-45deg, #000, #21232d, var(--color-0));
   --content-color: rgb(188, 196, 209);
 
-    /* Background color Light */
+    
   --color-6: #fff;
   --color-5: #4493F8;
   --color-4: #00abf0;
@@ -52,7 +51,7 @@ main {
   padding-top: 0;
 }
 
-/* Estilos para scrollbar personalizada */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -70,13 +69,13 @@ main {
   background: var(--color-4);
 }
 
-/* Estilos para selección de texto */
+
 ::selection {
   background: var(--color-5);
   color: white;
 }
 
-/* Estilos para focus en elementos interactivos */
+
 button:focus,
 a:focus,
 input:focus,
@@ -85,7 +84,7 @@ textarea:focus {
   outline-offset: 2px;
 }
 
-/* Animaciones globales */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -119,7 +118,7 @@ textarea:focus {
   }
 }
 
-/* Clases de utilidad para animaciones */
+
 .fade-in-up {
   animation: fadeInUp 0.6s ease-out;
 }
@@ -132,10 +131,10 @@ textarea:focus {
   animation: fadeInRight 0.6s ease-out;
 }
 
-/* Estilos para dispositivos móviles */
+
 @media (max-width: 768px) {
   main {
-    padding-top: 1.5625rem; /* 25px */
+    padding-top: 1.5625rem; 
   }
   
   body {

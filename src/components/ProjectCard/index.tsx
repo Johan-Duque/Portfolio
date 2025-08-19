@@ -1,3 +1,4 @@
+import { useLanguage  } from '../../Hooks';
 import styles from './ProjectCard.module.css'
 
 interface props {
@@ -10,23 +11,26 @@ interface props {
 }
 
 function ProjectCard({imgUrl, title, liveUrl, githubUrl, description, technologies} : props) {
+
+  const { t } = useLanguage();
+
   return (
         <div className={styles.projectCard}>
           <div className={styles.projectImage}>
             <div className={styles.imagePlaceholder}>
-             {/*<span>{title.charAt(0)}</span>*/}
+             
              <img src={imgUrl} alt={title} className={styles.image}/>
             </div>
             <div className={styles.projectOverlay}>
               <div className={styles.projectLinks}>
                 {liveUrl && (
                   <a href={liveUrl} target='_blank' className={styles.projectLink}>
-                    View Project
+                     {t("language") == 'en' ? 'View Project' : 'Ver Proyecto'}
                   </a>
                 )}
                 {githubUrl && (
                   <a href={githubUrl} target='_blank' className={styles.projectLink}>
-                    View Code
+                    {t("language") == 'en' ? 'View Code' : 'Ver Codigo'}
                   </a>
                 )}
               </div>

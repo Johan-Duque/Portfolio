@@ -1,4 +1,4 @@
-import { LanguageContext } from "../Contexts/LanguageContext";
+import { LanguageContext } from "../Contexts/LanguageContextValue";
 import { useContext } from "react";
 
 interface LanguageContextType {

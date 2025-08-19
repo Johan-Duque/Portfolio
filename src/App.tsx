@@ -1,7 +1,14 @@
+import { lazy, Suspense } from 'react';
 import { LanguageProvider } from './Contexts/LanguageContext';
-import { Navigation } from './Components/Navigation';
+import { Navigation, Loading } from './Components';
 
-import { Home, About, Experience, Projects, Technologies, Footer } from './Sections'
+import { Home } from './Sections';
+
+const About = lazy(() => import('./Sections').then(module => ({ default: module.About })));
+const Experience = lazy(() => import('./Sections').then(module => ({ default: module.Experience })));
+const Projects = lazy(() => import('./Sections').then(module => ({ default: module.Projects })));
+const Technologies = lazy(() => import('./Sections').then(module => ({ default: module.Technologies })));
+const Footer = lazy(() => import('./Sections').then(module => ({ default: module.Footer })));
 
 function App() {
   return (
@@ -10,12 +17,14 @@ function App() {
         <Navigation />
         <main>
           <Home />
-          <About />
-          <Experience />
-          <Projects />
-          <Technologies />
+          <Suspense fallback={<Loading />}>
+            <About />
+            <Experience />
+            <Projects />
+            <Technologies />
+            <Footer />
+          </Suspense>
         </main>
-        <Footer />
       </div>
     </LanguageProvider>
   );

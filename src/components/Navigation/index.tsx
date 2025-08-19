@@ -4,6 +4,9 @@ import styles from './Navigation.module.css';
 import { FaCode } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 
+import Enligsh from '/united-kingdom.png'
+import Spanish from '/spain.png'
+
 function Navigation() {
   const { language, setLanguage, t } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -76,13 +79,13 @@ function Navigation() {
                 className={`${styles.langBtn} ${language === 'en' ? styles.active : ''}`}
                 onClick={() => setLanguage('en')}
               >
-                EN
+                <img src={Enligsh} alt="English" />
               </button>
               <button
                 className={`${styles.langBtn} ${language === 'es' ? styles.active : ''}`}
                 onClick={() => setLanguage('es')}
               >
-                ES
+                <img src={Spanish} alt="English" />
               </button>
             </div>
 

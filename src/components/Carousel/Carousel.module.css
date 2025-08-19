@@ -4,7 +4,7 @@
   align-items: center;
   overflow: hidden;
   width: 100%;
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: var(--margin-top) auto;
 }
 
@@ -61,26 +61,16 @@
 }
 
 .carouselPagination {
-  width: 100%; 
-  display: flex; 
-  justify-content: center; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
   gap: 8px;
-  margin-top: 20px; 
+  margin-top: 20px;
   margin-bottom: var(--margin-bottom);
-  z-index: 15; 
+  z-index: 15;
   font-size: 18px;
   color: var(--gray-color);
 }
-
-.loadingContainer {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-  margin: 0 auto ;
-}
-
 
 
 

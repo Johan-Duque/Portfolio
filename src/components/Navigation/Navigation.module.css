@@ -97,12 +97,14 @@
   background: rgba(68, 147, 248, 0.1);
   border: 1px solid var(--color-3);
   color: var(--content-color);
-  padding: 0.5rem 1rem;
+  padding: 0.15rem .3rem;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 0.9rem;
   font-weight: 500;
+  display: flex;
+  align-items: center;
 }
 
 .langBtn:hover {
@@ -114,6 +116,10 @@
   background: var(--color-5);
   color: white;
   border-color: var(--color-5);
+}
+
+.langBtn img {
+  width: 2rem;
 }
 
 .hamburger {

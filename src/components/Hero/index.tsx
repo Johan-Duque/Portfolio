@@ -31,12 +31,12 @@ function Hero() {
 
             <div className={styles.containerButtons}>
               <button onClick={scrollToAbout} className={styles.ctaButton}>
-                {t("languaje") == "en" ? "Get to know me" : "Conóceme"}
+                {t("language") == "en" ? "Get to know me" : "Conóceme"}
               </button>
 
               <a
                 href={
-                  t("languaje") == "en"
+                  t("language") == "en"
                     ? "https://docs.google.com/document/d/14fZXEZoCCXrdMKUc7acDuAE51R37ATjG/edit"
                     : "https://docs.google.com/document/d/17u_4RzUgfRf-UocXM7h4UoN2zKnYDcHQ/edit"
                 }

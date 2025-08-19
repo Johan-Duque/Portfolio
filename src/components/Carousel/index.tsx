@@ -1,4 +1,5 @@
 import styles from "./Carousel.module.css";
+import { useLanguage } from "../../Hooks";
 
 import {
   useState,
@@ -14,6 +15,7 @@ interface CarouselProps {
 }
 
 function Carousel({ children }: CarouselProps) {
+  const { t } = useLanguage();
 
   const [itemsPerPage, setItemsPerPage] = useState(3);
   const [hideButtons, setHideButtons] = useState(false);
@@ -33,7 +35,6 @@ function Carousel({ children }: CarouselProps) {
       if (window.innerWidth < 750) newItemsPerPage = 1;
 
       setItemsPerPage(newItemsPerPage);
-      setHideButtons(window.innerWidth < 1200);
       setCurrentIndex(0);
     };
 
@@ -48,17 +49,21 @@ function Carousel({ children }: CarouselProps) {
 
     const carousel = carouselContentRef.current;
 
-
     carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
   }, [currentIndex, setCurrentIndex]);
 
   useEffect(() => {
-    if(totalSlides == 1) {
+    if (totalSlides == 1) {
       setHideButtons(true);
+    } else {
+      setHideButtons(window.innerWidth < 1200);
     }
-  }, [])
+  }, []);
 
-  const totalSlides = (totalItems % itemsPerPage > 0) ? Math.ceil(totalItems / itemsPerPage) : (totalItems / itemsPerPage);
+  const totalSlides =
+    totalItems % itemsPerPage > 0
+      ? Math.ceil(totalItems / itemsPerPage)
+      : totalItems / itemsPerPage;
 
   const goToNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
@@ -81,7 +86,7 @@ function Carousel({ children }: CarouselProps) {
     const currentTouchX = e.touches[0].clientX;
     const diff = touchStartX - currentTouchX;
 
-    const baseTransform = -currentIndex * 100; 
+    const baseTransform = -currentIndex * 100;
     const dragTransform = (diff / carouselContentRef.current.clientWidth) * 100;
 
     carouselContentRef.current.style.transform = `translateX(${
@@ -133,26 +138,21 @@ function Carousel({ children }: CarouselProps) {
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
-            { Array.from({ length: totalSlides }).map((_, slideIndex) => {
-                const slideStart = slideIndex * itemsPerPage;
-                const slideEnd = Math.min(
-                  slideStart + itemsPerPage,
-                  totalItems
-                );
-                const slideItems = itemsArray.slice(slideStart, slideEnd);
+            {Array.from({ length: totalSlides }).map((_, slideIndex) => {
+              const slideStart = slideIndex * itemsPerPage;
+              const slideEnd = Math.min(slideStart + itemsPerPage, totalItems);
+              const slideItems = itemsArray.slice(slideStart, slideEnd);
 
-                return (
-                  <div key={slideIndex} className={styles.carouselSlide}>
-                    {slideItems.map((item, index) => (
-                      <div key={index} className={styles.carouselChildWrapper}>
-                        {item}
-                      </div>
-                    ))}
-                  </div>
-                );
-              })
-            }
-
+              return (
+                <div key={slideIndex} className={styles.carouselSlide}>
+                  {slideItems.map((item, index) => (
+                    <div key={index} className={styles.carouselChildWrapper}>
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -169,10 +169,10 @@ function Carousel({ children }: CarouselProps) {
 
       {window.innerWidth < 1200 && (
         <div className={styles.carouselPagination}>
-          Página {currentIndex + 1} de {totalSlides}
+          {t("language") == "en" ? "Page" : "Página"} {currentIndex + 1} /{" "}
+          {totalSlides}
         </div>
       )}
-
     </div>
   );
 }
